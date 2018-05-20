@@ -1,0 +1,43 @@
+#wrapper_bu {
+  position: relative;
+}
+
+.holder_bu {
+  cursor: pointer
+}
+
+.holder_bu_awayL1 {
+  left: 0;
+  position: absolute;
+  top: 13%;
+  -webkit-transition: width 1s, height 1s, top 1s, left 1s;
+  -moz-transition: width 1s, height 1s, top 1s, left 1s;
+  -o-transition: width 1s, height 1s, top 1s, left 1s;
+  -ms-transition: width 1s, height 1s, top 1s, left 1s;
+  transition: width 1s, height 1s, top 1s, left 1s;
+  z-index: 1;
+}
+
+.holder_bu_center {
+  left: 260px;
+  position: absolute;
+  top: -55px;
+  -webkit-transition: width 1s, height 1s, top 1s, left 1s;
+  -moz-transition: width 1s, height 1s, top 1s, left 1s;
+  -o-transition: width 1s, height 1s, top 1s, left 1s;
+  -ms-transition: width 1s, height 1s, top 1s, left 1s;
+  transition: width 1s, height 1s, top 1s, left 1s;
+  z-index: 3;
+}
+
+.holder_bu_awayR1 {
+  left: 700px;
+  position: absolute;
+  top: 0;
+  transition: width 1s, height 1s, top 1s, left 1s;
+  -moz-transition: width 1s, height 1s, top 1s, left 1s;
+  -ms-transition: width 1s, height 1s, top 1s, left 1s;
+  -o-transition: width 1s, height 1s, top 1s, left 1s;
+  -webkit-transition: width 1s, height 1s, top 1s, left 1s;
+  z-index: 1;
+}
