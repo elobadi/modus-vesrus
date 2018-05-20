@@ -9,10 +9,11 @@ var gulp = require('gulp'),
   concat = require('gulp-concat'),
   browserSync = require('browser-sync').create();
 
+var sassSources = ['_/components/scss/style.scss'];
 
 //styles
 gulp.task('styles', function() {
-  return gulp.src(['_/components/scss/*.scss'])
+  return gulp.src(sassSources)
     // .pipe(plumber(plumberErrorHandler))
     .pipe(compass({
       css: '_/src/css',
