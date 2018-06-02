@@ -1,25 +1,27 @@
 @import "compass/css3";
 
-$pie_width: 200px;
+$pie_width: 120px;
 $pie_height: $pie_width /2;
-$wrapper-bg:  #E8E8E8; //#e0e0e0
-$green: #47CF73; //#00C853
-$red: #FF3C41; //#FF3A00
-$orange: #FCD000; //#FFAB00
-$text-color: #394955;
+$wrapper-bg:  $blue-primary; //#E8E8E8; //#e0e0e0
+$green: $red-secondary; //#47CF73; //#00C853
+$red: $red-secondary; //#FF3C41; //#FF3A00
+$orange: $red-secondary; //#FCD000; //#FFAB00
+$text-color: $blue-primary-text; //#394955;
 $body-bg: #fff;
 $legend-bg: #f0f0f0;
 
 .contents{
   display: inline-block;
-  margin: 30px 20px;
+  margin: 0 9px;
 
   .label-text{
     display: block;
     text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 15px;
+    font-size: 17px;
+    font-weight: 800;
+    // margin-bottom: 15px;
+    margin-top: 10px;
+    color: $text-color;
   }
 }
 .pie-wrapper{
@@ -41,7 +43,7 @@ $legend-bg: #f0f0f0;
   }
 
   &:before{
-  border: 50px solid $wrapper-bg;
+  border: 16px solid $wrapper-bg;
   border-bottom: none;
   top: 0;
   z-index: 1;
@@ -49,7 +51,7 @@ $legend-bg: #f0f0f0;
   }
 
   .arc{
-  border: 50px solid $green;
+  border: 16px solid $green;
   border-top: none;
   border-radius: 0 0 300px 300px;
   top: 100%;
@@ -57,20 +59,21 @@ $legend-bg: #f0f0f0;
 
    &::before{
       content: "";
-      height:1px;
-      width:5px;
+      height:0px;
+      width:0px;
       position: absolute;
       top: 0px;
     }
   }
 
   .score{
-    color: $text-color;
+    color:  $text-color;
+    font-weight: 900;
     font-size: 28px;
     display: block;
     width: $pie-width;
     text-align: center;
-    margin-top: ($pie-height/2) + 20;
+    margin-top: 25px; //($pie-height/2) + 20;
   }
 }
 
@@ -145,4 +148,15 @@ $legend-bg: #f0f0f0;
   50%{@include rotate(180deg);
   border-color: $green;
   }
+}
+
+.chart-heading {
+  font-size: 13px;
+  line-height: 2rem;
+  margin-bottom: 17px;
+}
+
+.pie {
+  padding-right: 0px;
+  padding-left: 0px;
 }
