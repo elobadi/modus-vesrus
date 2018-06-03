@@ -357,20 +357,20 @@ body {
   width: 392px;
 }
 
-#way-us {
-  margin-top: 16rem;
+.second-about {
+  margin-top: 33rem;
 }
-#way-us h6 {
+.second-about h6 {
   color: #7f8c8c;
   font-weight: 900;
 }
-#way-us li {
+.second-about li {
   color: #777;
   font-size: 13px;
   font-weight: 600;
   padding-bottom: 5px;
 }
-#way-us li i {
+.second-about li i {
   color: #e2534b;
   font-size: 11px;
 }
