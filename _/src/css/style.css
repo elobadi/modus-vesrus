@@ -364,15 +364,44 @@ body {
   color: #7f8c8c;
   font-weight: 900;
 }
-.second-about li {
+.second-about #way-us li {
   color: #777;
   font-size: 13px;
   font-weight: 600;
   padding-bottom: 5px;
 }
-.second-about li i {
+.second-about #way-us li i {
   color: #e2534b;
   font-size: 11px;
+}
+
+#skills .chart-heading {
+  color: #777;
+}
+
+#testimonial .card::before {
+  border-top: 25px solid #fff;
+  border-left: 22px solid transparent;
+  border-right: 0px solid transparent;
+  content: '';
+  display: inline-block;
+  left: 20px;
+  position: absolute;
+  bottom: -25px;
+}
+#testimonial .card .card-body {
+  padding: .7rem;
+  color: #777;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 2;
+}
+#testimonial .t-name p {
+  color: #7f8c8c;
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 10px;
+  margin-left: 60px;
 }
 
 .contents {

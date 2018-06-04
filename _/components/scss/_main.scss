@@ -200,7 +200,7 @@ body {
     }
 
     p {
-      background-color: rgba(41, 45, 45, 0.8);;
+      background-color: rgba(41, 45, 45, 0.8);
       border-radius: 5px;
       font-size: 1.1rem;
       margin-left: auto;
@@ -464,19 +464,67 @@ body {
     font-weight: 900;
   }
 
-  li {
-    color: $blue-secondary-text;
-    font-size: 13px;
-    font-weight: 600;
-    padding-bottom: 5px;
-    i {
-      color: $red-secondary;
-      font-size: 11px;
+  #way-us {
+    li {
+      color: $blue-secondary-text;
+      font-size: 13px;
+      font-weight: 600;
+      padding-bottom: 5px;
+
+      i {
+        color: $red-secondary;
+        font-size: 11px;
+      }
     }
   }
 }
 
 // End Of WAY CHOOSE US
+
+// SKILLS //
+#skills {
+  .chart-heading {
+    color: $blue-secondary-text;
+  }
+}
+
+// End Of SKILLS
+
+// TESTIMONIAL //
+#testimonial {
+  .card {
+    &::before {
+      border-top: 25px solid #fff;
+      border-left: 22px solid transparent;
+      border-right: 0px solid transparent;
+      content: '';
+      display: inline-block;
+      left: 20px;
+      position: absolute;
+      bottom: -25px;
+    }
+
+    .card-body {
+      padding: .7rem;
+      color: $blue-secondary-text;
+      font-size: 12px;
+      font-style: italic;
+      line-height: 2;
+    }
+  }
+
+  .t-name {
+    p {
+      color: $blue-primary-text;
+      font-size: 16px;
+      font-weight: 700;
+      padding-top: 10px;
+      margin-left: 60px;
+    }
+  }
+}
+
+// End Of TESTIMONIAL
 
 // End Of ABOUT
 //======================================================= //
