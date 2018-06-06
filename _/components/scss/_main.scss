@@ -155,86 +155,87 @@ body {
 // End Of Navbar
 //=======================================================//
 // Showcase //
+#showcase {
+  .carousel {
+    img {
+      height: 570px;
+    }
 
-.carousel {
-  img {
-    height: 570px;
-  }
+    .carousel-item::after {
+      background: rgba(0, 0, 0, 0.5);
+      bottom: 0;
+      content: '';
+      display: block;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
 
-  .carousel-item::after {
-    background: rgba(0, 0, 0, 0.5);
-    bottom: 0;
-    content: '';
-    display: block;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
+    .carousel-indicators {
+      bottom: -50px;
 
-  .carousel-indicators {
-    bottom: -50px;
+      li {
+        background-color: $blue-primary-text;
+        height: 5px;
+        margin-right: 10px;
+        width: 60px;
 
-    li {
-      background-color: $blue-primary-text;
-      height: 5px;
-      margin-right: 10px;
-      width: 60px;
-
-      &.active {
-        background-color: $red-secondary;
+        &.active {
+          background-color: $red-secondary;
+        }
       }
     }
-  }
 
-  .carousel-caption {
-    bottom: 30%;
+    .carousel-caption {
+      bottom: 30%;
 
-    h1 {
-      background-color: $red-secondary;
-      border-radius: 5px;
-      font-weight: 900;
-      margin-left: auto;
-      margin-right: auto;
-      width: 41%;
+      h1 {
+        background-color: $red-secondary;
+        border-radius: 5px;
+        font-weight: 900;
+        margin-left: auto;
+        margin-right: auto;
+        width: 41%;
+      }
+
+      p {
+        background-color: rgba(41, 45, 45, 0.8);
+        border-radius: 5px;
+        font-size: 1.1rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px 30px;
+        width: 52%;
+      }
     }
 
-    p {
-      background-color: rgba(41, 45, 45, 0.8);
-      border-radius: 5px;
-      font-size: 1.1rem;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 15px 30px;
-      width: 52%;
+    .carousel-control-next,
+    .carousel-control-prev {
+      opacity: 1;
+      width: 48.86px;
+
+      span {
+        background-color: $red-primary;
+        border-bottom: 3px solid $red-secondary;
+        font-size: 40px;
+      }
     }
-  }
 
-  .carousel-control-next,
-  .carousel-control-prev {
-    opacity: 1;
-    width: 48.86px;
-
-    span {
-      background-color: $red-primary;
-      border-bottom: 3px solid $red-secondary;
-      font-size: 40px;
+    .carousel-control-prev {
+      span {
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        padding: 10px 15px 10px 11px;
+      }
     }
-  }
 
-  .carousel-control-prev {
-    span {
-      border-bottom-right-radius: 5px;
-      border-top-right-radius: 5px;
-      padding: 10px 15px 10px 11px;
-    }
-  }
-
-  .carousel-control-next {
-    span {
-      border-bottom-left-radius: 5px;
-      border-top-left-radius: 5px;
-      padding: 10px 11px 10px 15px;
+    .carousel-control-next {
+      span {
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        padding: 10px 11px 10px 15px;
+      }
     }
   }
 }
@@ -250,7 +251,7 @@ body {
     padding: 1rem 2rem;
 
     h3 {
-      color: $blue-primary-text;
+      color: $blue-secondary-text;
     }
 
     p {
@@ -295,7 +296,7 @@ body {
       }
 
       .card-title {
-        color: $blue-primary-text;
+        color: $blue-secondary-text;
         font-size: 1rem;
         font-weight: 800;
         margin-bottom: 2rem;
@@ -460,7 +461,7 @@ body {
   margin-top: 33rem;
 
   h6 {
-    color: $blue-primary-text;
+    color: $blue-secondary-text;
     font-weight: 900;
   }
 
@@ -515,7 +516,7 @@ body {
 
   .t-name {
     p {
-      color: $blue-primary-text;
+      color: $blue-secondary-text;
       font-size: 16px;
       font-weight: 700;
       padding-top: 10px;
@@ -527,4 +528,86 @@ body {
 // End Of TESTIMONIAL
 
 // End Of ABOUT
+//======================================================= //
+
+// Clients //
+
+#clients {
+  margin-top: 33rem;
+
+  #clients-slider {
+    h6 {
+      margin-bottom: 0;
+      color: $blue-secondary-text;
+      font-weight: 900;
+    }
+
+    .carousel-indicators {
+      margin-right: auto;
+      margin-left: auto;
+      bottom: 0;
+      left: -5px;
+      margin-bottom: 12px;
+
+      li {
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        margin-right: auto;
+        opacity: 0;
+        background-color: $blue-primary-text;
+
+        &.active {
+          opacity: 1;
+        }
+      }
+
+      hr {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+      }
+    }
+
+    .card {
+      border: 0;
+      max-width: 170px;
+      max-height: 90px;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+      opacity: 1;
+
+      span {
+        background-color: $blue-primary-text;
+        border-bottom: 3px solid $blue-secondary-text;
+        font-size: 27px;
+        font-weight: 900;
+
+        &:hover {
+          background-color: $red-primary;
+          border-bottom: 3px solid $red-secondary;
+        }
+      }
+    }
+
+    .carousel-control-prev {
+      span {
+        border-radius: 5px;
+        padding: 5px 15px 5px 15px;
+      }
+    }
+
+    .carousel-control-next {
+      right: 25px;
+
+      span {
+        border-radius: 5px;
+        padding: 5px 15px 5px 15px;
+      }
+    }
+  }
+}
+
+// End Of Clients
 //======================================================= //
