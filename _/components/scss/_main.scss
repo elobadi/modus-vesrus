@@ -1,7 +1,8 @@
 body {
   background-color: #f3f3f3;
   font-family: 'Open Sans', sans-serif;
-  height: 3000px;
+
+  // height: 3000px;
 }
 
 // Navbar //
@@ -343,7 +344,6 @@ body {
 //======================================================= //
 
 // ABOUT //
-
 #about {
   background-color: #ececec;
   height: 400px;
@@ -454,84 +454,83 @@ body {
   }
 
   // End of .holder_bu_awayL1 //
-}
 
-// WAY CHOOSE US //
-.second-about {
-  margin-top: 33rem;
+  // WAY CHOOSE US //
+  .second-about {
+    margin-top: 33rem;
 
-  h6 {
-    color: $blue-secondary-text;
-    font-weight: 900;
-  }
-
-  #way-us {
-    li {
+    h6 {
       color: $blue-secondary-text;
-      font-size: 13px;
-      font-weight: 600;
-      padding-bottom: 5px;
+      font-weight: 900;
+    }
 
-      i {
-        color: $red-secondary;
-        font-size: 11px;
+    #way-us {
+      li {
+        color: $blue-secondary-text;
+        font-size: 13px;
+        font-weight: 600;
+        padding-bottom: 5px;
+
+        i {
+          color: $red-secondary;
+          font-size: 11px;
+        }
       }
     }
   }
-}
 
-// End Of WAY CHOOSE US
+  // End Of WAY CHOOSE US
 
-// SKILLS //
-#skills {
-  .chart-heading {
-    color: $blue-secondary-text;
-  }
-}
-
-// End Of SKILLS
-
-// TESTIMONIAL //
-#testimonial {
-  .card {
-    &::before {
-      border-top: 25px solid #fff;
-      border-left: 22px solid transparent;
-      border-right: 0px solid transparent;
-      content: '';
-      display: inline-block;
-      left: 20px;
-      position: absolute;
-      bottom: -25px;
-    }
-
-    .card-body {
-      padding: .7rem;
+  // SKILLS //
+  #skills {
+    .chart-heading {
       color: $blue-secondary-text;
-      font-size: 12px;
-      font-style: italic;
-      line-height: 2;
     }
   }
 
-  .t-name {
-    p {
-      color: $blue-secondary-text;
-      font-size: 16px;
-      font-weight: 700;
-      padding-top: 10px;
-      margin-left: 60px;
+  // End Of SKILLS
+
+  // TESTIMONIAL //
+  #testimonial {
+    .card {
+      &::before {
+        border-top: 25px solid #fff;
+        border-left: 22px solid transparent;
+        border-right: 0px solid transparent;
+        content: '';
+        display: inline-block;
+        left: 20px;
+        position: absolute;
+        bottom: -25px;
+      }
+
+      .card-body {
+        padding: .7rem;
+        color: $blue-secondary-text;
+        font-size: 12px;
+        font-style: italic;
+        line-height: 2;
+      }
+    }
+
+    .t-name {
+      p {
+        color: $blue-secondary-text;
+        font-size: 16px;
+        font-weight: 700;
+        padding-top: 10px;
+        margin-left: 60px;
+      }
     }
   }
+
+  // End Of TESTIMONIAL
 }
-
-// End Of TESTIMONIAL
 
 // End Of ABOUT
 //======================================================= //
 
 // Clients //
-
 #clients {
   margin-top: 33rem;
 
@@ -610,4 +609,118 @@ body {
 }
 
 // End Of Clients
+//======================================================= //
+
+// Footer //
+footer {
+  .info-footer {
+    color: #fff;
+    background-color: $blue-primary;
+    margin-top: 3.5rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3rem;
+
+    p {
+      font-size: 13px;
+    }
+
+    .contact-info {
+      h2 {
+        margin-bottom: 1.2rem;
+
+        strong {
+          font-size: 1.8rem;
+          font-weight: 800;
+        }
+
+        small {
+          font-size: 1.5rem;
+          margin-left: 5px;
+        }
+      }
+
+      .phone, .email {
+        span {
+          font-size: 1.2rem;
+          font-style: italic;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .footer-nav {
+      h6 {
+        font-size: 20px;
+        font-weight: 700;
+        color: #497e79;
+        margin-bottom: 2rem;
+      }
+
+      ul {
+        padding-left: 1.5rem;
+
+        a {
+          color: #fff;
+
+          li {
+            font-size: 13px;
+            margin-bottom: .3rem;
+
+            i {
+              padding-right: .5rem;
+            }
+          }
+        }
+      }
+    }
+
+    .from-blog {
+      h5 {
+        font-style: italic;
+        margin-bottom: 2rem;
+        font-weight: 300;
+
+        strong {
+          font-style: initial;
+          font-weight: 700;
+        }
+      }
+
+      img {
+        width: 70px;
+        height: 70px;
+        background-color: #5e9f9a;
+        padding: 1rem;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+
+      .post-date {
+        color: #497e79;
+      }
+    }
+  }
+
+  .social-footer {
+    background-color: #6ab3ac;
+    color: #fff;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+
+    p {
+      margin-bottom: 0;
+      font-size: 13px;
+    }
+
+    i {
+      font-size: 1.7rem;
+      color: #fff;
+      padding-left: 1.5rem;
+    }
+  }
+}
+
+// End Of Footer
 //======================================================= //

@@ -1,7 +1,6 @@
 body {
   background-color: #f3f3f3;
   font-family: 'Open Sans', sans-serif;
-  height: 3000px;
 }
 
 .navbar {
@@ -356,30 +355,27 @@ body {
   height: 225px;
   width: 392px;
 }
-
-.second-about {
+#about .second-about {
   margin-top: 33rem;
 }
-.second-about h6 {
+#about .second-about h6 {
   color: #7f8c8c;
   font-weight: 900;
 }
-.second-about #way-us li {
+#about .second-about #way-us li {
   color: #7f8c8c;
   font-size: 13px;
   font-weight: 600;
   padding-bottom: 5px;
 }
-.second-about #way-us li i {
+#about .second-about #way-us li i {
   color: #e2534b;
   font-size: 11px;
 }
-
-#skills .chart-heading {
+#about #skills .chart-heading {
   color: #7f8c8c;
 }
-
-#testimonial .card::before {
+#about #testimonial .card::before {
   border-top: 25px solid #fff;
   border-left: 22px solid transparent;
   border-right: 0px solid transparent;
@@ -389,14 +385,14 @@ body {
   position: absolute;
   bottom: -25px;
 }
-#testimonial .card .card-body {
+#about #testimonial .card .card-body {
   padding: .7rem;
   color: #7f8c8c;
   font-size: 12px;
   font-style: italic;
   line-height: 2;
 }
-#testimonial .t-name p {
+#about #testimonial .t-name p {
   color: #7f8c8c;
   font-size: 16px;
   font-weight: 700;
@@ -465,6 +461,88 @@ body {
 #clients #clients-slider .carousel-control-next span {
   border-radius: 5px;
   padding: 5px 15px 5px 15px;
+}
+
+footer .info-footer {
+  color: #fff;
+  background-color: #76c7c0;
+  margin-top: 3.5rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3rem;
+}
+footer .info-footer p {
+  font-size: 13px;
+}
+footer .info-footer .contact-info h2 {
+  margin-bottom: 1.2rem;
+}
+footer .info-footer .contact-info h2 strong {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+footer .info-footer .contact-info h2 small {
+  font-size: 1.5rem;
+  margin-left: 5px;
+}
+footer .info-footer .contact-info .phone span, footer .info-footer .contact-info .email span {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 600;
+}
+footer .info-footer .footer-nav h6 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #497e79;
+  margin-bottom: 2rem;
+}
+footer .info-footer .footer-nav ul {
+  padding-left: 1.5rem;
+}
+footer .info-footer .footer-nav ul a {
+  color: #fff;
+}
+footer .info-footer .footer-nav ul a li {
+  font-size: 13px;
+  margin-bottom: .3rem;
+}
+footer .info-footer .footer-nav ul a li i {
+  padding-right: .5rem;
+}
+footer .info-footer .from-blog h5 {
+  font-style: italic;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+footer .info-footer .from-blog h5 strong {
+  font-style: initial;
+  font-weight: 700;
+}
+footer .info-footer .from-blog img {
+  width: 70px;
+  height: 70px;
+  background-color: #5e9f9a;
+  padding: 1rem;
+}
+footer .info-footer .from-blog p {
+  margin-bottom: 0;
+}
+footer .info-footer .from-blog .post-date {
+  color: #497e79;
+}
+footer .social-footer {
+  background-color: #6ab3ac;
+  color: #fff;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+footer .social-footer p {
+  margin-bottom: 0;
+  font-size: 13px;
+}
+footer .social-footer i {
+  font-size: 1.7rem;
+  color: #fff;
+  padding-left: 1.5rem;
 }
 
 .contents {
