@@ -30,7 +30,7 @@ body {
   border-bottom: 3px solid #528b86;
   border-radius: 5px;
 }
-.navbar .nav-item.dropdown.active {
+.navbar .nav-item.dropdown.active, .navbar .nav-item.dropdown.show {
   background-color: #e8645a;
   border-bottom: 3px solid #e2534b;
   border-radius: 5px;

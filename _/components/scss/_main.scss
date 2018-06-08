@@ -39,7 +39,7 @@ body {
       border-radius: 5px;
     }
 
-    &.dropdown.active {
+    &.dropdown.active, &.dropdown.show {
       background-color: $red-primary;
       border-bottom: 3px solid $red-secondary;
       border-radius: 5px;
