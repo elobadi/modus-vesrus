@@ -5,6 +5,37 @@ body {
   // height: 3000px;
 }
 
+// Constant Styles //
+
+a {
+  &:hover {
+    text-decoration: none;
+
+    i.fa.fa-facebook-f {
+      color: #3B5998;
+    }
+
+    i.fa.fa-twitter {
+      color: #1DA1F2;
+    }
+
+    i.fa.fa-google-plus {
+      color: #DB4437;
+    }
+
+    i.fa.fa-linkedin {
+      color: #0077B5;
+    }
+
+    i.fa.fa-rss {
+      color: #f26522;
+    }
+  }
+}
+
+/* End Of Constant Styles
+*************************************************/
+
 // Navbar //
 
 .navbar {
@@ -347,134 +378,146 @@ body {
 #about {
   background-color: #ececec;
   height: 400px;
+  margin-bottom: 33rem;
 
   .container {
     margin-top: 100px;
     position: relative;
+
+    .browser-slider {
+      margin-bottom: 33rem;
+
+      .about-heading {
+        margin-bottom: 9rem;
+        padding-top: 50px;
+
+        h1 {
+          color: $red-secondary;
+          font-weight: 600;
+          font-family: 'Open Sans', sans-serif;
+        }
+
+        p {
+          color: $blue-secondary-text;
+        }
+      }
+
+      .browser-windows {
+        border: 6px solid #c1c7c8;
+        border-radius: 10px;
+
+        .top {
+          background: #c1c7c8;
+          padding: 10px;
+
+          .dot {
+            background-color: #fff;
+            border-radius: 50%;
+            display: inline-block;
+            height: 12px;
+            margin-right: 5px;
+            width: 12px;
+          }
+
+          .dot-right {
+            background-color: #fff;
+            border-radius: 30%;
+            display: inline-block;
+            height: 6px;
+            margin-bottom: 6px;
+            width: 12px;
+          }
+        }
+
+        .content-1, .content-2, .content-3 {
+          border-bottom-left-radius: 4px;
+          border-bottom-right-radius: 4px;
+        }
+      }
+
+      .holder_bu_center {
+        .browser-windows {
+          .content-1 {
+            background: url("../img/img-1.jpeg") no-repeat center;
+            background-size: cover;
+            height: 320px;
+            width: 580px;
+          }
+
+          .content-2 {
+            background: url("../img/img-2.jpeg") no-repeat center;
+            background-size: cover;
+            height: 320px;
+            width: 580px;
+          }
+
+          .content-3 {
+            background: url("../img/img-3.jpeg") no-repeat center;
+            background-size: cover;
+            height: 320px;
+            width: 580px;
+          }
+        }
+      }
+
+      // End of .holder_bu_center //
+
+      .holder_bu_awayL1, .holder_bu_awayR1 {
+        .browser-windows {
+          .content-1 {
+            background: url("../img/img-1.jpeg") no-repeat center;
+            background-size: cover;
+            height: 225px;
+            width: 392px;
+          }
+
+          .content-2 {
+            background: url("../img/img-2.jpeg") no-repeat center;
+            background-size: cover;
+            height: 225px;
+            width: 392px;
+          }
+
+          .content-3 {
+            background: url("../img/img-3.jpeg") no-repeat center;
+            background-size: cover;
+            height: 225px;
+            width: 392px;
+          }
+        }
+      }
+
+      // End of .holder_bu_awayL1 //
+
+    }
   }
 
-  .about-heading {
-    margin-bottom: 9rem;
-    padding-top: 50px;
+  // End Of browser-slider
+}
 
-    h1 {
-      color: $red-secondary;
-      font-weight: 600;
-      font-family: 'Open Sans', sans-serif;
-    }
+// End Of ABOUT
+//======================================================= //
 
-    p {
-      color: $blue-secondary-text;
-    }
+// second-about //
+.second-about {
+  // margin-top: 33rem;
+
+  h6 {
+    color: $blue-secondary-text;
+    font-weight: 900;
   }
-
-  .browser-windows {
-    border: 6px solid #c1c7c8;
-    border-radius: 10px;
-
-    .top {
-      background: #c1c7c8;
-      padding: 10px;
-
-      .dot {
-        background-color: #fff;
-        border-radius: 50%;
-        display: inline-block;
-        height: 12px;
-        margin-right: 5px;
-        width: 12px;
-      }
-
-      .dot-right {
-        background-color: #fff;
-        border-radius: 30%;
-        display: inline-block;
-        height: 6px;
-        margin-bottom: 6px;
-        width: 12px;
-      }
-    }
-
-    .content-1, .content-2, .content-3 {
-      border-bottom-left-radius: 4px;
-      border-bottom-right-radius: 4px;
-    }
-  }
-
-  .holder_bu_center {
-    .browser-windows {
-      .content-1 {
-        background: url("../img/img-1.jpeg") no-repeat center;
-        background-size: cover;
-        height: 320px;
-        width: 580px;
-      }
-
-      .content-2 {
-        background: url("../img/img-2.jpeg") no-repeat center;
-        background-size: cover;
-        height: 320px;
-        width: 580px;
-      }
-
-      .content-3 {
-        background: url("../img/img-3.jpeg") no-repeat center;
-        background-size: cover;
-        height: 320px;
-        width: 580px;
-      }
-    }
-  }
-
-  // End of .holder_bu_center //
-
-  .holder_bu_awayL1, .holder_bu_awayR1 {
-    .browser-windows {
-      .content-1 {
-        background: url("../img/img-1.jpeg") no-repeat center;
-        background-size: cover;
-        height: 225px;
-        width: 392px;
-      }
-
-      .content-2 {
-        background: url("../img/img-2.jpeg") no-repeat center;
-        background-size: cover;
-        height: 225px;
-        width: 392px;
-      }
-
-      .content-3 {
-        background: url("../img/img-3.jpeg") no-repeat center;
-        background-size: cover;
-        height: 225px;
-        width: 392px;
-      }
-    }
-  }
-
-  // End of .holder_bu_awayL1 //
 
   // WAY CHOOSE US //
-  .second-about {
-    margin-top: 33rem;
-
-    h6 {
+  #way-us {
+    li {
       color: $blue-secondary-text;
-      font-weight: 900;
-    }
+      font-size: 13px;
+      font-weight: 600;
+      padding-bottom: 5px;
 
-    #way-us {
-      li {
-        color: $blue-secondary-text;
-        font-size: 13px;
-        font-weight: 600;
-        padding-bottom: 5px;
-
-        i {
-          color: $red-secondary;
-          font-size: 11px;
-        }
+      i {
+        color: $red-secondary;
+        font-size: 11px;
       }
     }
   }
@@ -527,12 +570,10 @@ body {
   // End Of TESTIMONIAL
 }
 
-// End Of ABOUT
-//======================================================= //
+// End Of second-about //
 
 // Clients //
 #clients {
-  margin-top: 33rem;
 
   #clients-slider {
     h6 {
@@ -717,10 +758,211 @@ footer {
     i {
       font-size: 1.7rem;
       color: #fff;
-      padding-left: 1.5rem;
+      margin-left: 1.5rem;
     }
   }
 }
 
 // End Of Footer
 //======================================================= //
+
+/* about.html page
+*/
+
+// sub-header //
+
+#sub-header {
+  background-color: $secondary-bg;
+  color: $blue-secondary-text;
+  padding: 2rem 0;
+
+  .row {
+    h6 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    ul {
+      margin: 0;
+
+      li {
+        color: $blue-secondary-text;
+        font-size: .8rem;
+      }
+    }
+
+    .col:first-child {
+      &::before {
+        content: "";
+        border-top: 16px solid $secondary-bg;
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        left: 0;
+        position: absolute;
+        display: inline-block;
+        bottom: -46px;
+      }
+    }
+  }
+}
+
+// End Of sub-header
+//======================================================= //
+
+// about-heading //
+
+#about-heading {
+  margin-top: 4rem;
+
+  .col {
+    h2 {
+      font-weight: 600;
+      color: $red-secondary;
+    }
+
+    p {
+      color: $blue-secondary-text;
+      font-size: .9rem;
+    }
+  }
+
+  .second-about {
+    margin-top: 4rem;
+  }
+}
+
+// End Of about-heading
+//======================================================= //
+
+// our-team //
+#our-team {
+  background-color: $secondary-bg;
+  padding-top: 4rem;
+  height: 23.3rem;
+  margin-bottom: 16rem;
+  margin-top: 4rem;
+
+  h1 {
+    text-align: center;
+    color: $blue-secondary-text;
+    font-weight: 800;
+    margin-bottom: 4rem;
+  }
+
+  .card-deck {
+    position: relative;
+
+    .card {
+      background-color: #f8f8f8;
+      border: 0;
+      border-bottom: 4px solid #e5e6e6;
+      border-radius: 5px;
+      padding-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+      position: relative;
+      box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
+      transition: box-shadow .2s ease-in-out;
+      height: 310px;
+      width: 270px;
+
+      .card-body {
+        padding-bottom: 1.5rem;
+        padding: 0;
+
+        .overlay {
+          position: absolute;
+          bottom: 100%;
+          left: 0;
+          right: 0;
+          background-color: #90d1cb;
+          overflow: hidden;
+          width: 100%;
+          height: 0;
+          border-radius: 2px;
+          transition: 1s ease;
+
+          .overlay-info {
+            color: #fff;
+            padding: 2rem 1rem;
+            font-size: .8rem;
+            font-style: italic;
+            text-align: left;
+          }
+
+          .overlay-social {
+            margin-top: 2rem;
+
+            li {
+              background-color: #81bcb6;
+              border-radius: 5px;
+              margin: 4px;
+              height: 2.6rem;
+              width: 2.6rem;
+              padding-top: 9px;
+
+              i {
+                color: #fff;
+                font-size: 1.5rem;
+              }
+            }
+          }
+        }
+
+        button {
+          background-color: $blue-primary-text;
+          border-bottom: 4px solid $blue-secondary-text;
+          bottom: -25px;
+          color: white;
+          left: 38px;
+          padding: .6rem 2.5rem;
+          position: absolute;
+        }
+      }
+
+      &:hover, &.active {
+        background-color: white;
+        box-shadow: 2px 4px 8px 0 rgba(46, 61, 73, 0.2);
+
+        .card-body {
+          padding: 0;
+
+          .overlay {
+            bottom: 0;
+            height: 100%;
+          }
+
+          button {
+            background-color: $red-primary;
+            border-bottom-color: $red-secondary;
+          }
+        }
+      }
+    }
+  }
+}
+
+// End Of our-team
+//======================================================= //
+
+// clients-heading //
+
+#clients-heading {
+  margin-bottom: 3rem;
+  h1 {
+    font-weight: 300;
+    color: $red-secondary;
+  }
+
+  p {
+    color: $blue-secondary-text;
+    font-size: .9rem;
+  }
+}
+
+// End Of clients-heading
+//======================================================= //
+
+/* End Of about.html Page
+======================================================= */

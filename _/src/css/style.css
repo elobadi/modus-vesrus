@@ -3,6 +3,27 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+a:hover {
+  text-decoration: none;
+}
+a:hover i.fa.fa-facebook-f {
+  color: #3B5998;
+}
+a:hover i.fa.fa-twitter {
+  color: #1DA1F2;
+}
+a:hover i.fa.fa-google-plus {
+  color: #DB4437;
+}
+a:hover i.fa.fa-linkedin {
+  color: #0077B5;
+}
+a:hover i.fa.fa-rss {
+  color: #f26522;
+}
+
+/* End Of Constant Styles
+*************************************************/
 .navbar {
   background-color: #76c7c0;
 }
@@ -274,32 +295,36 @@ body {
 #about {
   background-color: #ececec;
   height: 400px;
+  margin-bottom: 33rem;
 }
 #about .container {
   margin-top: 100px;
   position: relative;
 }
-#about .about-heading {
+#about .container .browser-slider {
+  margin-bottom: 33rem;
+}
+#about .container .browser-slider .about-heading {
   margin-bottom: 9rem;
   padding-top: 50px;
 }
-#about .about-heading h1 {
+#about .container .browser-slider .about-heading h1 {
   color: #e2534b;
   font-weight: 600;
   font-family: 'Open Sans', sans-serif;
 }
-#about .about-heading p {
+#about .container .browser-slider .about-heading p {
   color: #7f8c8c;
 }
-#about .browser-windows {
+#about .container .browser-slider .browser-windows {
   border: 6px solid #c1c7c8;
   border-radius: 10px;
 }
-#about .browser-windows .top {
+#about .container .browser-slider .browser-windows .top {
   background: #c1c7c8;
   padding: 10px;
 }
-#about .browser-windows .top .dot {
+#about .container .browser-slider .browser-windows .top .dot {
   background-color: #fff;
   border-radius: 50%;
   display: inline-block;
@@ -307,7 +332,7 @@ body {
   margin-right: 5px;
   width: 12px;
 }
-#about .browser-windows .top .dot-right {
+#about .container .browser-slider .browser-windows .top .dot-right {
   background-color: #fff;
   border-radius: 30%;
   display: inline-block;
@@ -315,67 +340,65 @@ body {
   margin-bottom: 6px;
   width: 12px;
 }
-#about .browser-windows .content-1, #about .browser-windows .content-2, #about .browser-windows .content-3 {
+#about .container .browser-slider .browser-windows .content-1, #about .container .browser-slider .browser-windows .content-2, #about .container .browser-slider .browser-windows .content-3 {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-#about .holder_bu_center .browser-windows .content-1 {
+#about .container .browser-slider .holder_bu_center .browser-windows .content-1 {
   background: url("../img/img-1.jpeg") no-repeat center;
   background-size: cover;
   height: 320px;
   width: 580px;
 }
-#about .holder_bu_center .browser-windows .content-2 {
+#about .container .browser-slider .holder_bu_center .browser-windows .content-2 {
   background: url("../img/img-2.jpeg") no-repeat center;
   background-size: cover;
   height: 320px;
   width: 580px;
 }
-#about .holder_bu_center .browser-windows .content-3 {
+#about .container .browser-slider .holder_bu_center .browser-windows .content-3 {
   background: url("../img/img-3.jpeg") no-repeat center;
   background-size: cover;
   height: 320px;
   width: 580px;
 }
-#about .holder_bu_awayL1 .browser-windows .content-1, #about .holder_bu_awayR1 .browser-windows .content-1 {
+#about .container .browser-slider .holder_bu_awayL1 .browser-windows .content-1, #about .container .browser-slider .holder_bu_awayR1 .browser-windows .content-1 {
   background: url("../img/img-1.jpeg") no-repeat center;
   background-size: cover;
   height: 225px;
   width: 392px;
 }
-#about .holder_bu_awayL1 .browser-windows .content-2, #about .holder_bu_awayR1 .browser-windows .content-2 {
+#about .container .browser-slider .holder_bu_awayL1 .browser-windows .content-2, #about .container .browser-slider .holder_bu_awayR1 .browser-windows .content-2 {
   background: url("../img/img-2.jpeg") no-repeat center;
   background-size: cover;
   height: 225px;
   width: 392px;
 }
-#about .holder_bu_awayL1 .browser-windows .content-3, #about .holder_bu_awayR1 .browser-windows .content-3 {
+#about .container .browser-slider .holder_bu_awayL1 .browser-windows .content-3, #about .container .browser-slider .holder_bu_awayR1 .browser-windows .content-3 {
   background: url("../img/img-3.jpeg") no-repeat center;
   background-size: cover;
   height: 225px;
   width: 392px;
 }
-#about .second-about {
-  margin-top: 33rem;
-}
-#about .second-about h6 {
+
+.second-about h6 {
   color: #7f8c8c;
   font-weight: 900;
 }
-#about .second-about #way-us li {
+.second-about #way-us li {
   color: #7f8c8c;
   font-size: 13px;
   font-weight: 600;
   padding-bottom: 5px;
 }
-#about .second-about #way-us li i {
+.second-about #way-us li i {
   color: #e2534b;
   font-size: 11px;
 }
-#about #skills .chart-heading {
+.second-about #skills .chart-heading {
   color: #7f8c8c;
 }
-#about #testimonial .card::before {
+.second-about #testimonial .card::before {
   border-top: 25px solid #fff;
   border-left: 22px solid transparent;
   border-right: 0px solid transparent;
@@ -385,14 +408,14 @@ body {
   position: absolute;
   bottom: -25px;
 }
-#about #testimonial .card .card-body {
+.second-about #testimonial .card .card-body {
   padding: .7rem;
   color: #7f8c8c;
   font-size: 12px;
   font-style: italic;
   line-height: 2;
 }
-#about #testimonial .t-name p {
+.second-about #testimonial .t-name p {
   color: #7f8c8c;
   font-size: 16px;
   font-weight: 700;
@@ -400,9 +423,6 @@ body {
   margin-left: 60px;
 }
 
-#clients {
-  margin-top: 33rem;
-}
 #clients #clients-slider h6 {
   margin-bottom: 0;
   color: #7f8c8c;
@@ -542,9 +562,167 @@ footer .social-footer p {
 footer .social-footer i {
   font-size: 1.7rem;
   color: #fff;
-  padding-left: 1.5rem;
+  margin-left: 1.5rem;
 }
 
+/* about.html page
+*/
+#sub-header {
+  background-color: #ececec;
+  color: #7f8c8c;
+  padding: 2rem 0;
+}
+#sub-header .row h6 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+#sub-header .row ul {
+  margin: 0;
+}
+#sub-header .row ul li {
+  color: #7f8c8c;
+  font-size: .8rem;
+}
+#sub-header .row .col:first-child::before {
+  content: "";
+  border-top: 16px solid #ececec;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  left: 0;
+  position: absolute;
+  display: inline-block;
+  bottom: -46px;
+}
+
+#about-heading {
+  margin-top: 4rem;
+}
+#about-heading .col h2 {
+  font-weight: 600;
+  color: #e2534b;
+}
+#about-heading .col p {
+  color: #7f8c8c;
+  font-size: .9rem;
+}
+#about-heading .second-about {
+  margin-top: 4rem;
+}
+
+#our-team {
+  background-color: #ececec;
+  padding-top: 4rem;
+  height: 23.3rem;
+  margin-bottom: 16rem;
+  margin-top: 4rem;
+}
+#our-team h1 {
+  text-align: center;
+  color: #7f8c8c;
+  font-weight: 800;
+  margin-bottom: 4rem;
+}
+#our-team .card-deck {
+  position: relative;
+}
+#our-team .card-deck .card {
+  background-color: #f8f8f8;
+  border: 0;
+  border-bottom: 4px solid #e5e6e6;
+  border-radius: 5px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  -webkit-box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
+          box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
+  -webkit-transition: -webkit-box-shadow .2s ease-in-out;
+  transition: -webkit-box-shadow .2s ease-in-out;
+  transition: box-shadow .2s ease-in-out;
+  transition: box-shadow .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
+  height: 310px;
+  width: 270px;
+}
+#our-team .card-deck .card .card-body {
+  padding-bottom: 1.5rem;
+  padding: 0;
+}
+#our-team .card-deck .card .card-body .overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #90d1cb;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  border-radius: 2px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+#our-team .card-deck .card .card-body .overlay .overlay-info {
+  color: #fff;
+  padding: 2rem 1rem;
+  font-size: .8rem;
+  font-style: italic;
+  text-align: left;
+}
+#our-team .card-deck .card .card-body .overlay .overlay-social {
+  margin-top: 2rem;
+}
+#our-team .card-deck .card .card-body .overlay .overlay-social li {
+  background-color: #81bcb6;
+  border-radius: 5px;
+  margin: 4px;
+  height: 2.6rem;
+  width: 2.6rem;
+  padding-top: 9px;
+}
+#our-team .card-deck .card .card-body .overlay .overlay-social li i {
+  color: #fff;
+  font-size: 1.5rem;
+}
+#our-team .card-deck .card .card-body button {
+  background-color: #98a3a3;
+  border-bottom: 4px solid #7f8c8c;
+  bottom: -25px;
+  color: white;
+  left: 38px;
+  padding: .6rem 2.5rem;
+  position: absolute;
+}
+#our-team .card-deck .card:hover, #our-team .card-deck .card.active {
+  background-color: white;
+  -webkit-box-shadow: 2px 4px 8px 0 rgba(46, 61, 73, 0.2);
+          box-shadow: 2px 4px 8px 0 rgba(46, 61, 73, 0.2);
+}
+#our-team .card-deck .card:hover .card-body, #our-team .card-deck .card.active .card-body {
+  padding: 0;
+}
+#our-team .card-deck .card:hover .card-body .overlay, #our-team .card-deck .card.active .card-body .overlay {
+  bottom: 0;
+  height: 100%;
+}
+#our-team .card-deck .card:hover .card-body button, #our-team .card-deck .card.active .card-body button {
+  background-color: #e8645a;
+  border-bottom-color: #e2534b;
+}
+
+#clients-heading {
+  margin-bottom: 3rem;
+}
+#clients-heading h1 {
+  font-weight: 300;
+  color: #e2534b;
+}
+#clients-heading p {
+  color: #7f8c8c;
+  font-size: .9rem;
+}
+
+/* End Of about.html Page
+======================================================= */
 .contents {
   display: inline-block;
   margin: 0 9px;
