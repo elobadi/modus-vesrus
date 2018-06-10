@@ -1,5 +1,6 @@
 #wrapper_bu {
   position: relative;
+  width: 100%;
 }
 
 .holder_bu {
@@ -9,7 +10,7 @@
 .holder_bu_awayL1 {
   left: 0;
   position: absolute;
-  top: 13%;
+  top: 15%;
   -webkit-transition: width 1s, height 1s, top 1s, left 1s;
   -moz-transition: width 1s, height 1s, top 1s, left 1s;
   -o-transition: width 1s, height 1s, top 1s, left 1s;
@@ -19,7 +20,7 @@
 }
 
 .holder_bu_center {
-  left: 260px;
+  left: 23%;
   position: absolute;
   top: -55px;
   -webkit-transition: width 1s, height 1s, top 1s, left 1s;
@@ -31,9 +32,9 @@
 }
 
 .holder_bu_awayR1 {
-  left: 700px;
+  right: 0;
   position: absolute;
-  top: 0;
+  top: 15%;
   transition: width 1s, height 1s, top 1s, left 1s;
   -moz-transition: width 1s, height 1s, top 1s, left 1s;
   -ms-transition: width 1s, height 1s, top 1s, left 1s;

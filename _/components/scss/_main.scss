@@ -55,7 +55,7 @@ a {
   }
 
   .nav-item {
-    margin-left: 1rem;
+    // margin-left: .9rem;
     transition: all .5s, border-radius 0s;
 
     &:hover {
@@ -318,6 +318,8 @@ a {
     position: relative;
     box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
     transition: box-shadow .2s ease-in-out;
+    width: 100%;
+    height: 100%;
 
     .card-body {
       padding-bottom: 1.5rem;
@@ -377,18 +379,18 @@ a {
 // ABOUT //
 #about {
   background-color: #ececec;
-  height: 400px;
-  margin-bottom: 33rem;
+  height: 420px;
+  margin-bottom: 30rem;
 
   .container {
     margin-top: 100px;
     position: relative;
 
     .browser-slider {
-      margin-bottom: 33rem;
+      margin-bottom: 24rem;
 
       .about-heading {
-        margin-bottom: 9rem;
+        margin-bottom: 8rem;
         padding-top: 50px;
 
         h1 {
@@ -574,7 +576,6 @@ a {
 
 // Clients //
 #clients {
-
   #clients-slider {
     h6 {
       margin-bottom: 0;
@@ -950,6 +951,7 @@ footer {
 
 #clients-heading {
   margin-bottom: 3rem;
+
   h1 {
     font-weight: 300;
     color: $red-secondary;
