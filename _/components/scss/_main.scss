@@ -277,10 +277,12 @@ a {
 
 // INTRO //
 #intro {
-  .alert {
+  .row {
     border: 0;
     margin-top: 4rem;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
+    background-color: #ececec;
+    border-radius: 5px;
 
     h3 {
       color: $blue-secondary-text;
@@ -348,10 +350,43 @@ a {
         bottom: -25px;
         color: white;
         left: 38px;
-
-        // margin-bottom: -70px;
         padding: .6rem 2.5rem;
         position: absolute;
+      }
+
+      @media (min-width: 992px) and (max-width: 1199.98px) {
+        button {
+          bottom: -20px;
+          left: 38px;
+          padding: .4rem 1.5rem;
+          font-size: 1rem;
+        }
+      }
+
+      @media (min-width: 768px) and (max-width: 991.98px) {
+        button {
+          padding: .6rem 4.8rem;
+        }
+      }
+      @media (min-width: 576px) and (max-width: 767.98px) {
+        button {
+          padding: .6rem 10.5rem;
+        }
+      }
+      @media (min-width: 425px) and (max-width: 575.98px) {
+        button {
+          padding: .6rem 6.8rem;
+        }
+      }
+      @media (min-width: 375px) and (max-width: 424.98px) {
+        button {
+          padding: .6rem 5.3rem;
+        }
+      }
+      @media (max-width: 374.98px) {
+        button {
+          padding: .6rem 3.6rem;
+        }
       }
     }
 

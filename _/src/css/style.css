@@ -214,20 +214,22 @@ a:hover i.fa.fa-rss {
   padding: 10px 11px 10px 15px;
 }
 
-#intro .alert {
+#intro .row {
   border: 0;
   margin-top: 4rem;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
+  background-color: #ececec;
+  border-radius: 5px;
 }
-#intro .alert h3 {
+#intro .row h3 {
   color: #7f8c8c;
 }
-#intro .alert p {
+#intro .row p {
   color: #7f8c8c;
   font-size: 13px;
   margin-bottom: 0;
 }
-#intro .alert button {
+#intro .row button {
   background-color: #e8645a;
   border-bottom: 4px solid #e2534b;
   color: white;
@@ -279,6 +281,39 @@ a:hover i.fa.fa-rss {
   left: 38px;
   padding: .6rem 2.5rem;
   position: absolute;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #services .card .card-body button {
+    bottom: -20px;
+    left: 38px;
+    padding: .4rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #services .card .card-body button {
+    padding: .6rem 4.8rem;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #services .card .card-body button {
+    padding: .6rem 10.5rem;
+  }
+}
+@media (min-width: 425px) and (max-width: 575.98px) {
+  #services .card .card-body button {
+    padding: .6rem 6.8rem;
+  }
+}
+@media (min-width: 375px) and (max-width: 424.98px) {
+  #services .card .card-body button {
+    padding: .6rem 5.3rem;
+  }
+}
+@media (max-width: 374.98px) {
+  #services .card .card-body button {
+    padding: .6rem 3.6rem;
+  }
 }
 #services .card:hover, #services .card.active {
   background-color: white;
