@@ -1,154 +1,170 @@
 @import "compass/css3";
 
 $pie_width: 120px;
-$pie_height: $pie_width /2;
-$wrapper-bg:  $blue-primary; //#E8E8E8; //#e0e0e0
-$green: $red-secondary; //#47CF73; //#00C853
-$red: $red-secondary; //#FF3C41; //#FF3A00
-$orange: $red-secondary; //#FCD000; //#FFAB00
-$text-color: $blue-secondary-text; //#394955;
+$pie_height: $pie_width / 2;
+
+$wrapper-bg: $blue-primary;
+
+$green: $red-secondary;
+
+$red: $red-secondary;
+
+$orange: $red-secondary;
+
+$text-color: $blue-secondary-text;
+
 $body-bg: #fff;
 $legend-bg: #f0f0f0;
 
-.contents{
+.contents {
   display: inline-block;
   margin: 0 9px;
 
-  .label-text{
+  .label-text {
     display: block;
     text-align: center;
     font-size: 17px;
     font-weight: 800;
-    // margin-bottom: 15px;
     margin-top: 10px;
     color: $text-color;
   }
 }
-.pie-wrapper{
-	position: relative;
-  width:$pie_width;
-  height:$pie_height;
-  overflow:hidden;
 
-  .arc, &:before{
-  content: '';
+.pie-wrapper {
+  position: relative;
   width: $pie_width;
   height: $pie_height;
-  position: absolute;
-  -ms-transform-origin: 50% 0%;
-  -webkit-transform-origin: 50% 0%;
-  transform-origin: 50% 0%;
-  left: 0;
-  box-sizing: border-box;
+  overflow: hidden;
+
+  .arc, &:before {
+    content: '';
+    width: $pie_width;
+    height: $pie_height;
+    position: absolute;
+    -ms-transform-origin: 50% 0%;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    left: 0;
+    box-sizing: border-box;
   }
 
-  &:before{
-  border: 16px solid $wrapper-bg;
-  border-bottom: none;
-  top: 0;
-  z-index: 1;
-  border-radius: 300px 300px 0 0;
+  &:before {
+    border: 16px solid $wrapper-bg;
+    border-bottom: none;
+    top: 0;
+    z-index: 1;
+    border-radius: 300px 300px 0 0;
   }
 
-  .arc{
-  border: 16px solid $green;
-  border-top: none;
-  border-radius: 0 0 300px 300px;
-  top: 100%;
-  z-index: 2;
+  .arc {
+    border: 16px solid $green;
+    border-top: none;
+    border-radius: 0 0 300px 300px;
+    top: 100%;
+    z-index: 2;
 
-   &::before{
+    &::before {
       content: "";
-      height:0px;
-      width:0px;
+      height: 0px;
+      width: 0px;
       position: absolute;
       top: 0px;
     }
   }
 
-  .score{
-    color:  $text-color;
+  .score {
+    color: $text-color;
     font-weight: 900;
     font-size: 28px;
     display: block;
     width: $pie-width;
     text-align: center;
-    margin-top: 25px; //($pie-height/2) + 20;
+    margin-top: 25px;
   }
 }
 
 @for $i from 1 through 100 {
-  .arc[data-value="#{$i}"]{
+  .arc[data-value="#{$i}"] {
     @include animation(fill 2s);
     @include transform(rotate(#{$i * 1.8}deg));
-    transition:All 5s ease;
+
+    transition: All 5s ease;
     border-color: $green;
 
-    &:after{
+    &:after {
       content: '';
       position: absolute;
-      left:  -40px;
+      left: -40px;
       top: 5px;
     }
 
-    &::before{
+    &::before {
       background-color: $green;
     }
   }
 }
+
 @for $i from 1 through 50 {
-  .arc[data-value="#{$i}"]{
+  .arc[data-value="#{$i}"] {
     border-color: $red;
 
-    &::before{
+    &::before {
       background-color: $red;
     }
   }
 }
 
 @for $i from 51 through 80 {
-  .arc[data-value="#{$i}"]{
+  .arc[data-value="#{$i}"] {
     border-color: $orange;
 
-    &::before{
+    &::before {
       background-color: $orange;
     }
   }
 }
 
-.legend{
+.legend {
   display: inline-block;
-  width:150px;
+  width: 150px;
   vertical-align: text-bottom;
-  margin-left:100px;
+  margin-left: 100px;
   background-color: $legend-bg;
 
-  span{
-    width:20px;
+  span {
+    width: 20px;
     height: 20px;
     display: inline-block;
     margin: 0 10px 0 20px;
 
-    &.green{
+    &.green {
       background-color: $green;
     }
-    &.orange{
+
+    &.orange {
       background-color: $orange;
     }
-    &.red{
+
+    &.red {
       background-color: $red;
     }
   }
 }
 
-@include keyframes(fill){
-  0%{@include rotate(0deg);
+@include keyframes(fill) {
+  0% {
+    @include rotate(0deg);
+
     border-color: $red;
   }
-  50%{@include rotate(180deg);
-  border-color: $green;
+
+  50% {
+    @include rotate(180deg);
+
+    border-color: $green;
   }
 }
+
 
 .chart-heading {
   font-size: 13px;
@@ -159,4 +175,183 @@ $legend-bg: #f0f0f0;
 .pie {
   padding-right: 0px;
   padding-left: 0px;
+}
+
+@media (max-width: 1198.98px) {
+  $pie_width: 100px;
+  $pie_height: $pie_width / 2;
+
+  $wrapper-bg: $blue-primary;
+
+  $green: $red-secondary;
+
+  $red: $red-secondary;
+
+  $orange: $red-secondary;
+
+  $text-color: $blue-secondary-text;
+
+  $body-bg: #fff;
+  $legend-bg: #f0f0f0;
+
+  .contents {
+    display: inline-block;
+    margin: 0 9px;
+
+    .label-text {
+      display: block;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 800;
+      margin-top: 10px;
+      color: $text-color;
+    }
+  }
+
+  .pie-wrapper {
+    position: relative;
+    width: $pie_width;
+    height: $pie_height;
+    overflow: hidden;
+
+    .arc, &:before {
+      content: '';
+      width: $pie_width;
+      height: $pie_height;
+      position: absolute;
+      -ms-transform-origin: 50% 0%;
+      -webkit-transform-origin: 50% 0%;
+      transform-origin: 50% 0%;
+      left: 0;
+      box-sizing: border-box;
+    }
+
+    &:before {
+      border: 16px solid $wrapper-bg;
+      border-bottom: none;
+      top: 0;
+      z-index: 1;
+      border-radius: 300px 300px 0 0;
+    }
+
+    .arc {
+      border: 16px solid $green;
+      border-top: none;
+      border-radius: 0 0 300px 300px;
+      top: 100%;
+      z-index: 2;
+
+      &::before {
+        content: "";
+        height: 0px;
+        width: 0px;
+        position: absolute;
+        top: 0px;
+      }
+    }
+
+    .score {
+      color: $text-color;
+      font-weight: 900;
+      font-size: 20px;
+      display: block;
+      width: $pie-width;
+      text-align: center;
+      margin-top: 25px;
+    }
+  }
+
+  @for $i from 1 through 100 {
+    .arc[data-value="#{$i}"] {
+      @include animation(fill 2s);
+      @include transform(rotate(#{$i * 1.8}deg));
+
+      transition: All 5s ease;
+      border-color: $green;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: -40px;
+        top: 5px;
+      }
+
+      &::before {
+        background-color: $green;
+      }
+    }
+  }
+
+  @for $i from 1 through 50 {
+    .arc[data-value="#{$i}"] {
+      border-color: $red;
+
+      &::before {
+        background-color: $red;
+      }
+    }
+  }
+
+  @for $i from 51 through 80 {
+    .arc[data-value="#{$i}"] {
+      border-color: $orange;
+
+      &::before {
+        background-color: $orange;
+      }
+    }
+  }
+
+  .legend {
+    display: inline-block;
+    width: 150px;
+    vertical-align: text-bottom;
+    margin-left: 100px;
+    background-color: $legend-bg;
+
+    span {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      margin: 0 10px 0 20px;
+
+      &.green {
+        background-color: $green;
+      }
+
+      &.orange {
+        background-color: $orange;
+      }
+
+      &.red {
+        background-color: $red;
+      }
+    }
+  }
+
+  @include keyframes(fill) {
+    0% {
+      @include rotate(0deg);
+
+      border-color: $red;
+    }
+
+    50% {
+      @include rotate(180deg);
+
+      border-color: $green;
+    }
+  }
+
+
+  .chart-heading {
+    font-size: 13px;
+    line-height: 2rem;
+    margin-bottom: 17px;
+  }
+
+  .pie {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
 }
