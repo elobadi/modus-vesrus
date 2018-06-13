@@ -806,6 +806,30 @@ footer .social-footer i {
 #about-heading {
   margin-top: 4rem;
 }
+@media (min-width: 425px) and (max-width: 575.98px) {
+  #about-heading .col {
+    text-align: center;
+  }
+  #about-heading .col h2 {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 375px) and (max-width: 424.98px) {
+  #about-heading .col {
+    text-align: center;
+  }
+  #about-heading .col h2 {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 374.98px) {
+  #about-heading .col {
+    text-align: center;
+  }
+  #about-heading .col h2 {
+    font-size: 1.1rem;
+  }
+}
 #about-heading .col h2 {
   font-weight: 600;
   color: #e2534b;
@@ -825,16 +849,26 @@ footer .social-footer i {
   margin-bottom: 16rem;
   margin-top: 4rem;
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #our-team {
+    margin-bottom: 40rem;
+  }
+}
+@media (max-width: 575.98px) {
+  #our-team {
+    margin-bottom: 90rem;
+  }
+}
 #our-team h1 {
   text-align: center;
   color: #7f8c8c;
   font-weight: 800;
   margin-bottom: 4rem;
 }
-#our-team .card-deck {
+#our-team .row {
   position: relative;
 }
-#our-team .card-deck .card {
+#our-team .row .card {
   background-color: #f8f8f8;
   border: 0;
   border-bottom: 4px solid #e5e6e6;
@@ -849,14 +883,14 @@ footer .social-footer i {
   transition: -webkit-box-shadow .2s ease-in-out;
   transition: box-shadow .2s ease-in-out;
   transition: box-shadow .2s ease-in-out, -webkit-box-shadow .2s ease-in-out;
-  height: 310px;
-  width: 270px;
+  height: 120%;
+  width: 100%;
 }
-#our-team .card-deck .card .card-body {
+#our-team .row .card .card-body {
   padding-bottom: 1.5rem;
   padding: 0;
 }
-#our-team .card-deck .card .card-body .overlay {
+#our-team .row .card .card-body .overlay {
   position: absolute;
   bottom: 100%;
   left: 0;
@@ -869,17 +903,17 @@ footer .social-footer i {
   -webkit-transition: 1s ease;
   transition: 1s ease;
 }
-#our-team .card-deck .card .card-body .overlay .overlay-info {
+#our-team .row .card .card-body .overlay .overlay-info {
   color: #fff;
   padding: 2rem 1rem;
   font-size: .8rem;
   font-style: italic;
   text-align: left;
 }
-#our-team .card-deck .card .card-body .overlay .overlay-social {
+#our-team .row .card .card-body .overlay .overlay-social {
   margin-top: 2rem;
 }
-#our-team .card-deck .card .card-body .overlay .overlay-social li {
+#our-team .row .card .card-body .overlay .overlay-social li {
   background-color: #81bcb6;
   border-radius: 5px;
   margin: 4px;
@@ -887,11 +921,11 @@ footer .social-footer i {
   width: 2.6rem;
   padding-top: 9px;
 }
-#our-team .card-deck .card .card-body .overlay .overlay-social li i {
+#our-team .row .card .card-body .overlay .overlay-social li i {
   color: #fff;
   font-size: 1.5rem;
 }
-#our-team .card-deck .card .card-body button {
+#our-team .row .card .card-body button {
   background-color: #98a3a3;
   border-bottom: 4px solid #7f8c8c;
   bottom: -25px;
@@ -900,31 +934,101 @@ footer .social-footer i {
   padding: .6rem 2.5rem;
   position: absolute;
 }
-#our-team .card-deck .card:hover, #our-team .card-deck .card.active {
+#our-team .row .card:hover, #our-team .row .card.active {
   background-color: white;
   -webkit-box-shadow: 2px 4px 8px 0 rgba(46, 61, 73, 0.2);
           box-shadow: 2px 4px 8px 0 rgba(46, 61, 73, 0.2);
 }
-#our-team .card-deck .card:hover .card-body, #our-team .card-deck .card.active .card-body {
+#our-team .row .card:hover .card-body, #our-team .row .card.active .card-body {
   padding: 0;
 }
-#our-team .card-deck .card:hover .card-body .overlay, #our-team .card-deck .card.active .card-body .overlay {
+#our-team .row .card:hover .card-body .overlay, #our-team .row .card.active .card-body .overlay {
   bottom: 0;
   height: 100%;
 }
-#our-team .card-deck .card:hover .card-body button, #our-team .card-deck .card.active .card-body button {
+#our-team .row .card:hover .card-body button, #our-team .row .card.active .card-body button {
   background-color: #e8645a;
   border-bottom-color: #e2534b;
 }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #our-team .row .card .card-body .overlay .overlay-info {
+    padding-bottom: 0;
+  }
+  #our-team .row .card .card-body .overlay .overlay-social {
+    margin-top: 0;
+  }
+  #our-team .row .card .card-body .overlay .overlay-social li {
+    margin: 2px;
+    height: 2.1rem;
+    width: 2.1rem;
+    padding-top: 6px;
+  }
+  #our-team .row .card .card-body .overlay .overlay-social li i {
+    font-size: 1.1rem;
+  }
+  #our-team .row .card .card-body button {
+    padding: .3rem 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #our-team .row .card {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #our-team .row .card .card-body button {
+    padding: .6rem 2.8rem;
+  }
+}
+@media (min-width: 425px) and (max-width: 575.98px) {
+  #our-team .row .card {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #our-team .row .card .card-body button {
+    padding: .6rem 3.2rem;
+  }
+}
+@media (min-width: 375px) and (max-width: 424.98px) {
+  #our-team .row .card {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #our-team .row .card .card-body button {
+    padding: .6rem 2.5rem;
+  }
+}
+@media (min-width: 411px) and (max-width: 414px) {
+  #our-team .row .card .card-body button {
+    padding: .6rem 3.6rem;
+  }
+}
+@media (max-width: 374.98px) {
+  #our-team .row .card {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #our-team .row .card .card-body button {
+    padding: .6rem 2.6rem;
+  }
+}
+@media (min-width: 359.98px) and (max-width: 360px) {
+  #our-team .row .card .card-body button {
+    padding: .6rem 3.6rem;
+  }
+}
 
-#clients-heading {
+#second-heading {
   margin-bottom: 3rem;
 }
-#clients-heading h1 {
+#second-heading h1 {
   font-weight: 300;
   color: #e2534b;
 }
-#clients-heading p {
+#second-heading p {
   color: #7f8c8c;
   font-size: .9rem;
 }

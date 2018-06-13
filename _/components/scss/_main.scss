@@ -758,7 +758,6 @@ a {
   @media (min-width: 375px) and (max-width: 425px) {
     .container {
       .browser-slider {
-
         .about-heading {
           h1 {
             font-size: 2rem;
@@ -771,7 +770,6 @@ a {
   @media (max-width: 320px) {
     .container {
       .browser-slider {
-
         .about-heading {
           h1 {
             font-size: 1.7rem;
@@ -1104,6 +1102,30 @@ footer {
   margin-top: 4rem;
 
   .col {
+    @media (min-width: 425px) and (max-width: 575.98px) {
+      text-align: center;
+
+      h2 {
+        font-size: 1.6rem;
+      }
+    }
+
+    @media (min-width: 375px) and (max-width: 424.98px) {
+      text-align: center;
+
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
+
+    @media (max-width: 374.98px) {
+      text-align: center;
+
+      h2 {
+        font-size: 1.1rem;
+      }
+    }
+
     h2 {
       font-weight: 600;
       color: $red-secondary;
@@ -1131,6 +1153,14 @@ footer {
   margin-bottom: 16rem;
   margin-top: 4rem;
 
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    margin-bottom: 40rem;
+  }
+
+  @media (max-width: 575.98px) {
+    margin-bottom: 90rem;
+  }
+
   h1 {
     text-align: center;
     color: $blue-secondary-text;
@@ -1138,7 +1168,7 @@ footer {
     margin-bottom: 4rem;
   }
 
-  .card-deck {
+  .row {
     position: relative;
 
     .card {
@@ -1152,8 +1182,8 @@ footer {
       position: relative;
       box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
       transition: box-shadow .2s ease-in-out;
-      height: 310px;
-      width: 270px;
+      height: 120%;
+      width: 100%;
 
       .card-body {
         padding-bottom: 1.5rem;
@@ -1228,14 +1258,121 @@ footer {
         }
       }
     }
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .card {
+        .card-body {
+          .overlay {
+            .overlay-info {
+              padding-bottom: 0;
+            }
+
+            .overlay-social {
+              margin-top: 0;
+
+              li {
+                margin: 2px;
+                height: 2.1rem;
+                width: 2.1rem;
+                padding-top: 6px;
+
+                i {
+                  font-size: 1.1rem;
+                }
+              }
+            }
+          }
+
+          button {
+            padding: .3rem 1rem;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .card {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+        .card-body {
+          button {
+            padding: .6rem 2.8rem;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 425px) and (max-width: 575.98px) {
+      .card {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+
+        .card-body {
+          button {
+            padding: .6rem 3.2rem;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 375px) and (max-width: 424.98px) {
+      .card {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+
+        .card-body {
+          button {
+            padding: .6rem 2.5rem;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 411px) and (max-width: 414px) {
+      .card {
+        .card-body {
+          button {
+            padding: .6rem 3.6rem;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 374.98px) {
+      .card {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+        .card-body {
+          button {
+            padding: .6rem 2.6rem;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 359.98px) and (max-width: 360px) {
+      .card {
+        .card-body {
+          button {
+            padding: .6rem 3.6rem;
+          }
+        }
+      }
+    }
   }
 }
 
 // End Of our-team
 //======================================================= //
 
-// clients-heading //
-#clients-heading {
+// second-heading //
+#second-heading {
   margin-bottom: 3rem;
 
   h1 {
@@ -1249,7 +1386,7 @@ footer {
   }
 }
 
-// End Of clients-heading
+// End Of second-heading
 //======================================================= //
 
 /* End Of about.html Page
