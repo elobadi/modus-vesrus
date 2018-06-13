@@ -1070,12 +1070,18 @@ footer {
       margin: 0;
     }
 
-    ul {
+    .breadcrumb {
       margin: 0;
+      padding: 0;
 
       li {
         color: $blue-secondary-text;
         font-size: .8rem;
+
+        a {
+          text-decoration: none;
+          color: $blue-secondary-text;
+        }
       }
     }
 

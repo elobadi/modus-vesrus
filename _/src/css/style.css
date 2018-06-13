@@ -785,12 +785,17 @@ footer .social-footer i {
   font-weight: 600;
   margin: 0;
 }
-#sub-header .row ul {
+#sub-header .row .breadcrumb {
   margin: 0;
+  padding: 0;
 }
-#sub-header .row ul li {
+#sub-header .row .breadcrumb li {
   color: #7f8c8c;
   font-size: .8rem;
+}
+#sub-header .row .breadcrumb li a {
+  text-decoration: none;
+  color: #7f8c8c;
 }
 #sub-header .row .col:first-child::before {
   content: "";
