@@ -791,7 +791,7 @@ a {
   }
 
   // WAY CHOOSE US //
-  #way-us {
+  #way-us, #planning, #development {
     li {
       color: $blue-secondary-text;
       font-size: 13px;
@@ -1104,7 +1104,7 @@ footer {
 //======================================================= //
 
 // about-heading //
-#about-heading {
+#about-heading, #services-heading {
   margin-top: 4rem;
 
   .col {
@@ -1152,7 +1152,7 @@ footer {
 //======================================================= //
 
 // our-team //
-#our-team {
+#our-team, #pricing-tables {
   background-color: $secondary-bg;
   padding-top: 4rem;
   height: 23.3rem;
@@ -1242,6 +1242,8 @@ footer {
           left: 38px;
           padding: .6rem 2.5rem;
           position: absolute;
+          width: 70%;
+          height: 16%;
         }
       }
 
@@ -1291,6 +1293,7 @@ footer {
 
           button {
             padding: .3rem 1rem;
+            width: 63%;
           }
         }
       }
@@ -1396,4 +1399,68 @@ footer {
 //======================================================= //
 
 /* End Of about.html Page
+======================================================= */
+
+/******************************************************************************/
+
+/* services.html page
+*/
+
+#pricing-tables {
+  .card {
+    .card-body {
+      ul {
+        li {
+          background-color: unset;
+          font-size: 14px;
+          color: $blue-secondary-text;
+          border-color: rgba(0, 0, 0, 0.05);
+        }
+      }
+
+      button.btn-top {
+        bottom: 90%;
+      }
+
+      &:hover {
+        background-color: #90d1cb;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+
+        ul {
+          li {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .card {
+      .card-body {
+        ul {
+          li {
+            font-size: 13px;
+            padding-right: .3px;
+            padding-left: .3px;
+          }
+        }
+
+        button {
+          padding: .3rem 1rem;
+          width: 63%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .col-md-6 {
+      margin-bottom: 6rem;
+    }
+  }
+}
+
+/* End Of services.html Page
 ======================================================= */
