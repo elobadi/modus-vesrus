@@ -108,7 +108,7 @@ a {
       padding-right: 1rem;
       transition: all .2s, border-radius 0s;
 
-      &:hover {
+      &:hover, &.active {
         background-color: $blue-primary;
       }
     }
@@ -1052,6 +1052,7 @@ footer {
 // End Of Footer
 //======================================================= //
 
+/*
 /******************************************************************************/
 
  /* about.html page
@@ -1401,6 +1402,7 @@ footer {
 /* End Of about.html Page
 ======================================================= */
 
+/*
 /******************************************************************************/
 
 /* services.html page
@@ -1463,4 +1465,135 @@ footer {
 }
 
 /* End Of services.html Page
+======================================================= */
+
+/*
+/******************************************************************************/
+
+/* portfolio.html page
+*/
+
+#navigation-top {
+  margin-top: 3rem;
+
+  .navigation-btns {
+    button {
+      background-color: $blue-primary-text;
+      color: #fff;
+      border-bottom: 3px solid $blue-secondary-text;
+      font-size: .9rem;
+      padding-bottom: .2rem;
+      padding-top: .2rem;
+
+      &:hover, &.active {
+        background-color: $blue-primary-link-hover;
+        border-bottom-color: $blue-primary-link-borders;
+      }
+    }
+  }
+}
+
+#items {
+  margin-top: 3rem;
+
+  .row {
+    .col-lg-6, .col {
+      img {
+        border-bottom: 4px solid #e5e6e6;
+        border-radius: 5px;
+      }
+
+      h6 {
+        color: $blue-secondary-text;
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+
+      p {
+        color: $blue-secondary-text;
+        font-size: .8rem;
+      }
+
+      .row {
+        margin-top: 4.5rem;
+
+        .col {
+          a {
+            text-decoration: none;
+            color: $blue-secondary-text;
+            font-size: 1.2rem;
+            font-weight: 600;
+
+            i {
+              padding: 8px;
+              background-color: $blue-primary-link-borders;
+              border-radius: 5px;
+              color: #fff;
+              font-size: 1.5rem;
+            }
+
+            &:hover {
+              color: $red-secondary;
+
+              i {
+                background-color: $red-secondary;
+              }
+            }
+          }
+
+          button {
+            background-color: $blue-primary;
+            border-bottom: 4px solid $blue-primary-link-hover;
+            color: white;
+            padding: .8rem 3rem;
+            font-size: 1rem;
+
+            &:hover {
+              background-color: $red-primary;
+              border-bottom: 4px solid $red-secondary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#pagination {
+  margin-top: 5rem;
+  .pagination {
+    li {
+      margin-right: 1rem;
+
+      .page-link {
+        background-color: #98a3a3;
+        color: #fff;
+        border: none;
+        border-bottom: 3px solid #7f8c8c;
+        font-size: 1rem;
+        border-radius: 5px;
+        font-weight: 700;
+        width: 2.5rem;
+        height: 2.5rem;
+        text-align: center;
+        i {
+          font-weight: 800;
+          font-size: 1.6rem;
+
+        }
+
+        &.active {
+          background-color: $blue-primary-link-hover;
+          border-bottom-color: $blue-primary-link-borders;
+        }
+        &:hover {
+          background-color: $red-primary;
+          border-bottom: 3px solid $red-secondary;
+        }
+      }
+    }
+  }
+}
+
+/* End of portfolio.html page
 ======================================================= */

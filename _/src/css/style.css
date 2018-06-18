@@ -90,7 +90,7 @@ a:hover i.fa.fa-rss {
   -webkit-transition: all .2s, border-radius 0s;
   transition: all .2s, border-radius 0s;
 }
-.navbar .dropdown-menu .dropdown-item:hover {
+.navbar .dropdown-menu .dropdown-item:hover, .navbar .dropdown-menu .dropdown-item.active {
   background-color: #76c7c0;
 }
 .navbar .dropdown-toggle::after {
@@ -772,6 +772,7 @@ footer .social-footer i {
   margin-left: 1.5rem;
 }
 
+/*
 /******************************************************************************/
  /* about.html page
 */
@@ -1043,6 +1044,7 @@ footer .social-footer i {
 
 /* End Of about.html Page
 ======================================================= */
+/*
 /******************************************************************************/
 /* services.html page
 */
@@ -1081,6 +1083,109 @@ footer .social-footer i {
 }
 
 /* End Of services.html Page
+======================================================= */
+/*
+/******************************************************************************/
+/* portfolio.html page
+*/
+#navigation-top {
+  margin-top: 3rem;
+}
+#navigation-top .navigation-btns button {
+  background-color: #98a3a3;
+  color: #fff;
+  border-bottom: 3px solid #7f8c8c;
+  font-size: .9rem;
+  padding-bottom: .2rem;
+  padding-top: .2rem;
+}
+#navigation-top .navigation-btns button:hover, #navigation-top .navigation-btns button.active {
+  background-color: #62a29e;
+  border-bottom-color: #528b86;
+}
+
+#items {
+  margin-top: 3rem;
+}
+#items .row .col-lg-6 img, #items .row .col img {
+  border-bottom: 4px solid #e5e6e6;
+  border-radius: 5px;
+}
+#items .row .col-lg-6 h6, #items .row .col h6 {
+  color: #7f8c8c;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+#items .row .col-lg-6 p, #items .row .col p {
+  color: #7f8c8c;
+  font-size: .8rem;
+}
+#items .row .col-lg-6 .row, #items .row .col .row {
+  margin-top: 4.5rem;
+}
+#items .row .col-lg-6 .row .col a, #items .row .col .row .col a {
+  text-decoration: none;
+  color: #7f8c8c;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+#items .row .col-lg-6 .row .col a i, #items .row .col .row .col a i {
+  padding: 8px;
+  background-color: #528b86;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.5rem;
+}
+#items .row .col-lg-6 .row .col a:hover, #items .row .col .row .col a:hover {
+  color: #e2534b;
+}
+#items .row .col-lg-6 .row .col a:hover i, #items .row .col .row .col a:hover i {
+  background-color: #e2534b;
+}
+#items .row .col-lg-6 .row .col button, #items .row .col .row .col button {
+  background-color: #76c7c0;
+  border-bottom: 4px solid #62a29e;
+  color: white;
+  padding: .8rem 3rem;
+  font-size: 1rem;
+}
+#items .row .col-lg-6 .row .col button:hover, #items .row .col .row .col button:hover {
+  background-color: #e8645a;
+  border-bottom: 4px solid #e2534b;
+}
+
+#pagination {
+  margin-top: 5rem;
+}
+#pagination .pagination li {
+  margin-right: 1rem;
+}
+#pagination .pagination li .page-link {
+  background-color: #98a3a3;
+  color: #fff;
+  border: none;
+  border-bottom: 3px solid #7f8c8c;
+  font-size: 1rem;
+  border-radius: 5px;
+  font-weight: 700;
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+}
+#pagination .pagination li .page-link i {
+  font-weight: 800;
+  font-size: 1.6rem;
+}
+#pagination .pagination li .page-link.active {
+  background-color: #62a29e;
+  border-bottom-color: #528b86;
+}
+#pagination .pagination li .page-link:hover {
+  background-color: #e8645a;
+  border-bottom: 3px solid #e2534b;
+}
+
+/* End of portfolio.html page
 ======================================================= */
 .contents {
   display: inline-block;
