@@ -1485,9 +1485,14 @@ footer {
       padding-bottom: .2rem;
       padding-top: .2rem;
 
-      &:hover, &.active {
+      &.active {
         background-color: $blue-primary-link-hover;
         border-bottom-color: $blue-primary-link-borders;
+      }
+
+      &:hover {
+        background-color: $red-primary;
+        border-bottom: 3px solid $red-secondary;
       }
     }
   }
@@ -1501,6 +1506,8 @@ footer {
       img {
         border-bottom: 4px solid #e5e6e6;
         border-radius: 5px;
+        height: 270px;
+        width: 570px;
       }
 
       h6 {
@@ -1515,8 +1522,6 @@ footer {
       }
 
       .row {
-        margin-top: 4.5rem;
-
         .col {
           a {
             text-decoration: none;
@@ -1554,6 +1559,70 @@ footer {
             }
           }
         }
+
+        @media (min-width: 1200px) {
+          margin-top: 4.5rem !important;
+        }
+
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+          .col {
+            a {
+              font-size: 1rem;
+
+              i {
+                font-size: 1.3rem;
+              }
+            }
+
+            button {
+              font-size: .8rem;
+            }
+          }
+        }
+
+        @media (min-width: 375px) and (max-width: 575.98px) {
+          .col {
+            &:first-child {
+              padding-right: 0;
+            }
+
+            &:last-child {
+              padding-left: 10px;
+            }
+
+            a {
+              font-size: .8rem;
+
+              i {
+                font-size: .7rem;
+              }
+            }
+
+            button {
+              font-size: .8rem;
+            }
+          }
+        }
+
+        @media (max-width: 374.98px) {
+          .col {
+            &:last-child {
+              margin-top: 1rem !important;
+            }
+
+            a {
+              font-size: .8rem;
+
+              i {
+                font-size: .7rem;
+              }
+            }
+
+            button {
+              font-size: .8rem;
+            }
+          }
+        }
       }
     }
   }
@@ -1561,6 +1630,7 @@ footer {
 
 #pagination {
   margin-top: 5rem;
+
   .pagination {
     li {
       margin-right: 1rem;
@@ -1576,20 +1646,25 @@ footer {
         width: 2.5rem;
         height: 2.5rem;
         text-align: center;
+
         i {
           font-weight: 800;
           font-size: 1.6rem;
-
         }
 
         &.active {
           background-color: $blue-primary-link-hover;
           border-bottom-color: $blue-primary-link-borders;
         }
+
         &:hover {
           background-color: $red-primary;
           border-bottom: 3px solid $red-secondary;
         }
+      }
+
+      @media (max-width: 374.98px) {
+        margin-right: .5rem;
       }
     }
   }
