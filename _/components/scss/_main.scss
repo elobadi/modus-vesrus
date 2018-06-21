@@ -340,7 +340,7 @@ a {
       margin-bottom: 0;
     }
 
-    button {
+    a.btn {
       background-color: $red-primary;
       border-bottom: 4px solid $red-secondary;
       color: white;
@@ -402,7 +402,7 @@ a {
         font-size: 13px;
       }
 
-      button {
+      a.btn {
         background-color: $blue-primary;
         border-bottom: 4px solid $blue-secondary;
         bottom: -25px;
@@ -422,7 +422,7 @@ a {
           color: $red-secondary;
         }
 
-        button {
+        a.btn {
           background-color: $red-primary;
           border-bottom-color: $red-secondary;
         }
@@ -433,7 +433,7 @@ a {
   @media (min-width: 992px) and (max-width: 1199.98px) {
     .card {
       .card-body {
-        button {
+        a.btn {
           bottom: -20px;
           left: 38px;
           padding: .4rem 1.7rem;
@@ -450,7 +450,7 @@ a {
       margin-right: auto;
 
       .card-body {
-        button {
+        a.btn {
           padding: .6rem 2.8rem;
         }
       }
@@ -464,7 +464,7 @@ a {
       margin-right: auto;
 
       .card-body {
-        button {
+        a.btn {
           padding: .6rem 3.2rem;
         }
       }
@@ -478,7 +478,7 @@ a {
       margin-right: auto;
 
       .card-body {
-        button {
+        a.btn {
           padding: .6rem 2.5rem;
         }
       }
@@ -488,7 +488,7 @@ a {
   @media (min-width: 411px) and (max-width: 414px) {
     .card {
       .card-body {
-        button {
+        a.btn {
           padding: .6rem 3.6rem;
         }
       }
@@ -502,7 +502,7 @@ a {
       margin-right: auto;
 
       .card-body {
-        button {
+        a.btn {
           padding: .6rem 2.6rem;
         }
       }
@@ -512,7 +512,7 @@ a {
   @media (min-width: 359.98px) and (max-width: 360px) {
     .card {
       .card-body {
-        button {
+        a.btn {
           padding: .6rem 3.6rem;
         }
       }
@@ -1235,7 +1235,7 @@ footer {
           }
         }
 
-        button {
+        a.btn {
           background-color: $blue-primary-text;
           border-bottom: 4px solid $blue-secondary-text;
           bottom: -25px;
@@ -1260,7 +1260,7 @@ footer {
             height: 100%;
           }
 
-          button {
+          a.btn {
             background-color: $red-primary;
             border-bottom-color: $red-secondary;
           }
@@ -1292,7 +1292,7 @@ footer {
             }
           }
 
-          button {
+          a.btn {
             padding: .3rem 1rem;
             width: 63%;
           }
@@ -1307,7 +1307,7 @@ footer {
         margin-right: auto;
 
         .card-body {
-          button {
+          a.btn {
             padding: .6rem 2.8rem;
           }
         }
@@ -1321,7 +1321,7 @@ footer {
         margin-right: auto;
 
         .card-body {
-          button {
+          a.btn {
             padding: .6rem 3.2rem;
           }
         }
@@ -1335,7 +1335,7 @@ footer {
         margin-right: auto;
 
         .card-body {
-          button {
+          a.btn {
             padding: .6rem 2.5rem;
           }
         }
@@ -1345,7 +1345,7 @@ footer {
     @media (min-width: 411px) and (max-width: 414px) {
       .card {
         .card-body {
-          button {
+          a.btn {
             padding: .6rem 3.6rem;
           }
         }
@@ -1359,7 +1359,7 @@ footer {
         margin-right: auto;
 
         .card-body {
-          button {
+          a.btn {
             padding: .6rem 2.6rem;
           }
         }
@@ -1369,7 +1369,7 @@ footer {
     @media (min-width: 359.98px) and (max-width: 360px) {
       .card {
         .card-body {
-          button {
+          a.btn {
             padding: .6rem 3.6rem;
           }
         }
@@ -1420,7 +1420,7 @@ footer {
         }
       }
 
-      button.btn-top {
+      a.btn.btn-top {
         bottom: 90%;
       }
 
@@ -1449,7 +1449,7 @@ footer {
           }
         }
 
-        button {
+        a.btn {
           padding: .3rem 1rem;
           width: 63%;
         }
@@ -1477,7 +1477,7 @@ footer {
   margin-top: 3rem;
 
   .navigation-btns {
-    button {
+    a.btn {
       background-color: $blue-primary-text;
       color: #fff;
       border-bottom: 3px solid $blue-secondary-text;
@@ -1546,7 +1546,7 @@ footer {
             }
           }
 
-          button {
+          a.btn {
             background-color: $blue-primary;
             border-bottom: 4px solid $blue-primary-link-hover;
             color: white;
@@ -1574,7 +1574,7 @@ footer {
               }
             }
 
-            button {
+            a.btn {
               font-size: .8rem;
             }
           }
@@ -1598,7 +1598,7 @@ footer {
               }
             }
 
-            button {
+            a.btn {
               font-size: .8rem;
             }
           }
@@ -1618,7 +1618,7 @@ footer {
               }
             }
 
-            button {
+            a.btn {
               font-size: .8rem;
             }
           }

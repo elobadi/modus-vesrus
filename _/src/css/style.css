@@ -269,7 +269,7 @@ a:hover i.fa.fa-rss {
   font-size: 13px;
   margin-bottom: 0;
 }
-#intro .row button {
+#intro .row a.btn {
   background-color: #e8645a;
   border-bottom: 4px solid #e2534b;
   color: white;
@@ -323,7 +323,7 @@ a:hover i.fa.fa-rss {
   color: #7f8c8c;
   font-size: 13px;
 }
-#services .card .card-body button {
+#services .card .card-body a.btn {
   background-color: #76c7c0;
   border-bottom: 4px solid #62bdbd;
   bottom: -25px;
@@ -340,12 +340,12 @@ a:hover i.fa.fa-rss {
 #services .card:hover .card-body i, #services .card.active .card-body i {
   color: #e2534b;
 }
-#services .card:hover .card-body button, #services .card.active .card-body button {
+#services .card:hover .card-body a.btn, #services .card.active .card-body a.btn {
   background-color: #e8645a;
   border-bottom-color: #e2534b;
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  #services .card .card-body button {
+  #services .card .card-body a.btn {
     bottom: -20px;
     left: 38px;
     padding: .4rem 1.7rem;
@@ -358,7 +358,7 @@ a:hover i.fa.fa-rss {
     margin-left: auto;
     margin-right: auto;
   }
-  #services .card .card-body button {
+  #services .card .card-body a.btn {
     padding: .6rem 2.8rem;
   }
 }
@@ -368,7 +368,7 @@ a:hover i.fa.fa-rss {
     margin-left: auto;
     margin-right: auto;
   }
-  #services .card .card-body button {
+  #services .card .card-body a.btn {
     padding: .6rem 3.2rem;
   }
 }
@@ -378,12 +378,12 @@ a:hover i.fa.fa-rss {
     margin-left: auto;
     margin-right: auto;
   }
-  #services .card .card-body button {
+  #services .card .card-body a.btn {
     padding: .6rem 2.5rem;
   }
 }
 @media (min-width: 411px) and (max-width: 414px) {
-  #services .card .card-body button {
+  #services .card .card-body a.btn {
     padding: .6rem 3.6rem;
   }
 }
@@ -393,12 +393,12 @@ a:hover i.fa.fa-rss {
     margin-left: auto;
     margin-right: auto;
   }
-  #services .card .card-body button {
+  #services .card .card-body a.btn {
     padding: .6rem 2.6rem;
   }
 }
 @media (min-width: 359.98px) and (max-width: 360px) {
-  #services .card .card-body button {
+  #services .card .card-body a.btn {
     padding: .6rem 3.6rem;
   }
 }
@@ -931,7 +931,7 @@ footer .social-footer i {
   color: #fff;
   font-size: 1.5rem;
 }
-#our-team .row .card .card-body button, #pricing-tables .row .card .card-body button {
+#our-team .row .card .card-body a.btn, #pricing-tables .row .card .card-body a.btn {
   background-color: #98a3a3;
   border-bottom: 4px solid #7f8c8c;
   bottom: -25px;
@@ -954,7 +954,7 @@ footer .social-footer i {
   bottom: 0;
   height: 100%;
 }
-#our-team .row .card:hover .card-body button, #our-team .row .card.active .card-body button, #pricing-tables .row .card:hover .card-body button, #pricing-tables .row .card.active .card-body button {
+#our-team .row .card:hover .card-body a.btn, #our-team .row .card.active .card-body a.btn, #pricing-tables .row .card:hover .card-body a.btn, #pricing-tables .row .card.active .card-body a.btn {
   background-color: #e8645a;
   border-bottom-color: #e2534b;
 }
@@ -974,7 +974,7 @@ footer .social-footer i {
   #our-team .row .card .card-body .overlay .overlay-social li i, #pricing-tables .row .card .card-body .overlay .overlay-social li i {
     font-size: 1.1rem;
   }
-  #our-team .row .card .card-body button, #pricing-tables .row .card .card-body button {
+  #our-team .row .card .card-body a.btn, #pricing-tables .row .card .card-body a.btn {
     padding: .3rem 1rem;
     width: 63%;
   }
@@ -985,7 +985,7 @@ footer .social-footer i {
     margin-left: auto;
     margin-right: auto;
   }
-  #our-team .row .card .card-body button, #pricing-tables .row .card .card-body button {
+  #our-team .row .card .card-body a.btn, #pricing-tables .row .card .card-body a.btn {
     padding: .6rem 2.8rem;
   }
 }
@@ -995,7 +995,7 @@ footer .social-footer i {
     margin-left: auto;
     margin-right: auto;
   }
-  #our-team .row .card .card-body button, #pricing-tables .row .card .card-body button {
+  #our-team .row .card .card-body a.btn, #pricing-tables .row .card .card-body a.btn {
     padding: .6rem 3.2rem;
   }
 }
@@ -1005,12 +1005,12 @@ footer .social-footer i {
     margin-left: auto;
     margin-right: auto;
   }
-  #our-team .row .card .card-body button, #pricing-tables .row .card .card-body button {
+  #our-team .row .card .card-body a.btn, #pricing-tables .row .card .card-body a.btn {
     padding: .6rem 2.5rem;
   }
 }
 @media (min-width: 411px) and (max-width: 414px) {
-  #our-team .row .card .card-body button, #pricing-tables .row .card .card-body button {
+  #our-team .row .card .card-body a.btn, #pricing-tables .row .card .card-body a.btn {
     padding: .6rem 3.6rem;
   }
 }
@@ -1020,12 +1020,12 @@ footer .social-footer i {
     margin-left: auto;
     margin-right: auto;
   }
-  #our-team .row .card .card-body button, #pricing-tables .row .card .card-body button {
+  #our-team .row .card .card-body a.btn, #pricing-tables .row .card .card-body a.btn {
     padding: .6rem 2.6rem;
   }
 }
 @media (min-width: 359.98px) and (max-width: 360px) {
-  #our-team .row .card .card-body button, #pricing-tables .row .card .card-body button {
+  #our-team .row .card .card-body a.btn, #pricing-tables .row .card .card-body a.btn {
     padding: .6rem 3.6rem;
   }
 }
@@ -1054,7 +1054,7 @@ footer .social-footer i {
   color: #7f8c8c;
   border-color: rgba(0, 0, 0, 0.05);
 }
-#pricing-tables .card .card-body button.btn-top {
+#pricing-tables .card .card-body a.btn.btn-top {
   bottom: 90%;
 }
 #pricing-tables .card .card-body:hover {
@@ -1071,7 +1071,7 @@ footer .social-footer i {
     padding-right: .3px;
     padding-left: .3px;
   }
-  #pricing-tables .card .card-body button {
+  #pricing-tables .card .card-body a.btn {
     padding: .3rem 1rem;
     width: 63%;
   }
@@ -1091,7 +1091,7 @@ footer .social-footer i {
 #navigation-top {
   margin-top: 3rem;
 }
-#navigation-top .navigation-btns button {
+#navigation-top .navigation-btns a.btn {
   background-color: #98a3a3;
   color: #fff;
   border-bottom: 3px solid #7f8c8c;
@@ -1099,11 +1099,11 @@ footer .social-footer i {
   padding-bottom: .2rem;
   padding-top: .2rem;
 }
-#navigation-top .navigation-btns button.active {
+#navigation-top .navigation-btns a.btn.active {
   background-color: #62a29e;
   border-bottom-color: #528b86;
 }
-#navigation-top .navigation-btns button:hover {
+#navigation-top .navigation-btns a.btn:hover {
   background-color: #e8645a;
   border-bottom: 3px solid #e2534b;
 }
@@ -1145,14 +1145,14 @@ footer .social-footer i {
 #items .row .col-lg-6 .row .col a:hover i, #items .row .col .row .col a:hover i {
   background-color: #e2534b;
 }
-#items .row .col-lg-6 .row .col button, #items .row .col .row .col button {
+#items .row .col-lg-6 .row .col a.btn, #items .row .col .row .col a.btn {
   background-color: #76c7c0;
   border-bottom: 4px solid #62a29e;
   color: white;
   padding: .8rem 3rem;
   font-size: 1rem;
 }
-#items .row .col-lg-6 .row .col button:hover, #items .row .col .row .col button:hover {
+#items .row .col-lg-6 .row .col a.btn:hover, #items .row .col .row .col a.btn:hover {
   background-color: #e8645a;
   border-bottom: 4px solid #e2534b;
 }
@@ -1168,7 +1168,7 @@ footer .social-footer i {
   #items .row .col-lg-6 .row .col a i, #items .row .col .row .col a i {
     font-size: 1.3rem;
   }
-  #items .row .col-lg-6 .row .col button, #items .row .col .row .col button {
+  #items .row .col-lg-6 .row .col a.btn, #items .row .col .row .col a.btn {
     font-size: .8rem;
   }
 }
@@ -1185,7 +1185,7 @@ footer .social-footer i {
   #items .row .col-lg-6 .row .col a i, #items .row .col .row .col a i {
     font-size: .7rem;
   }
-  #items .row .col-lg-6 .row .col button, #items .row .col .row .col button {
+  #items .row .col-lg-6 .row .col a.btn, #items .row .col .row .col a.btn {
     font-size: .8rem;
   }
 }
@@ -1199,7 +1199,7 @@ footer .social-footer i {
   #items .row .col-lg-6 .row .col a i, #items .row .col .row .col a i {
     font-size: .7rem;
   }
-  #items .row .col-lg-6 .row .col button, #items .row .col .row .col button {
+  #items .row .col-lg-6 .row .col a.btn, #items .row .col .row .col a.btn {
     font-size: .8rem;
   }
 }
