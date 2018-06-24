@@ -856,7 +856,7 @@ a {
 // End Of second-about //
 
 // Clients //
-#clients {
+#clients, #related-projects {
   #clients-slider {
     h6 {
       margin-bottom: 0;
@@ -1679,7 +1679,7 @@ footer {
 /* portfolio-2col.html page
 */
 
-#items {
+#items, #related-projects {
   .card-deck {
     .card {
       border-bottom: 3px solid #e5e6e6 !important;
@@ -1750,4 +1750,124 @@ footer {
 }
 
 /* End of portfolio-2col.html page
+======================================================= */
+
+/* portfolio-project.html page
+*/
+#project {
+  .project-navigation {
+    h4 {
+      color: $blue-secondary-text;
+      font-weight: 700;
+    }
+
+    nav {
+      ul {
+        li {
+          a.page-link {
+            display: block;
+            margin-left: 0;
+            line-height: 0;
+            color: #fff;
+            background-color: 0;
+            border: 0;
+            padding: 0;
+
+            &:focus {
+              box-shadow: none;
+            }
+
+            i {
+              background-color: #98a3a3;
+              border-bottom: 3px solid #7f8c8c;
+              font-size: 27px;
+              font-weight: 900;
+              border-radius: 5px;
+              padding: 5px 15px;
+
+              &:hover {
+                background-color: #e8645a;
+                border-bottom: 3px solid #e2534b;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #showcase {
+    .carousel {
+      .carousel-item::after {
+        background: unset;
+        bottom: 0;
+        content: '';
+        display: block;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+  }
+
+  .project-info {
+    margin-top: 8rem;
+
+    .row {
+      h6 {
+        color: $blue-secondary-text;
+        font-weight: 800;
+      }
+
+      a {
+        color: $red-primary-text;
+        font-size: .8rem;
+      }
+
+      .project-description {
+        p {
+          font-size: .9rem;
+          color: $blue-secondary-text;
+        }
+      }
+
+      .project-details {
+        p {
+          font-size: .8rem;
+          color: #777777;
+        }
+
+        i {
+          font-size: 1rem;
+          color: #b0b8b8;
+        }
+
+        ul {
+          li {
+            padding-bottom: 0;
+            background-color: unset;
+          }
+        }
+      }
+    }
+  }
+}
+
+#related-projects {
+  #clients-slider {
+    .carousel-inner {
+      .carousel-item {
+        .card-deck {
+          .card {
+            max-width: 100%;
+            max-height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* End of portfolio-project.html page
 ======================================================= */

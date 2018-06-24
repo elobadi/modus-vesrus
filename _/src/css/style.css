@@ -625,19 +625,19 @@ a:hover i.fa.fa-rss {
   margin-left: 60px;
 }
 
-#clients #clients-slider h6 {
+#clients #clients-slider h6, #related-projects #clients-slider h6 {
   margin-bottom: 0;
   color: #7f8c8c;
   font-weight: 900;
 }
-#clients #clients-slider .carousel-indicators {
+#clients #clients-slider .carousel-indicators, #related-projects #clients-slider .carousel-indicators {
   margin-right: auto;
   margin-left: auto;
   bottom: 0;
   left: -5px;
   margin-bottom: 12px;
 }
-#clients #clients-slider .carousel-indicators li {
+#clients #clients-slider .carousel-indicators li, #related-projects #clients-slider .carousel-indicators li {
   border-radius: 50%;
   width: 8px;
   height: 8px;
@@ -645,47 +645,50 @@ a:hover i.fa.fa-rss {
   opacity: 0;
   background-color: #98a3a3;
 }
-#clients #clients-slider .carousel-indicators li.active {
+#clients #clients-slider .carousel-indicators li.active, #related-projects #clients-slider .carousel-indicators li.active {
   opacity: 1;
 }
-#clients #clients-slider .carousel-indicators hr {
+#clients #clients-slider .carousel-indicators hr, #related-projects #clients-slider .carousel-indicators hr {
   margin-top: .5rem;
   margin-bottom: .5rem;
 }
-#clients #clients-slider .card {
+#clients #clients-slider .card, #related-projects #clients-slider .card {
   border: 0;
   max-width: 170px;
   max-height: 90px;
 }
 #clients #clients-slider .carousel-control-next,
-#clients #clients-slider .carousel-control-prev {
+#clients #clients-slider .carousel-control-prev, #related-projects #clients-slider .carousel-control-next,
+#related-projects #clients-slider .carousel-control-prev {
   opacity: 1;
 }
 #clients #clients-slider .carousel-control-next span,
-#clients #clients-slider .carousel-control-prev span {
+#clients #clients-slider .carousel-control-prev span, #related-projects #clients-slider .carousel-control-next span,
+#related-projects #clients-slider .carousel-control-prev span {
   background-color: #98a3a3;
   border-bottom: 3px solid #7f8c8c;
   font-size: 27px;
   font-weight: 900;
 }
 #clients #clients-slider .carousel-control-next span:hover,
-#clients #clients-slider .carousel-control-prev span:hover {
+#clients #clients-slider .carousel-control-prev span:hover, #related-projects #clients-slider .carousel-control-next span:hover,
+#related-projects #clients-slider .carousel-control-prev span:hover {
   background-color: #e8645a;
   border-bottom: 3px solid #e2534b;
 }
-#clients #clients-slider .carousel-control-prev span {
+#clients #clients-slider .carousel-control-prev span, #related-projects #clients-slider .carousel-control-prev span {
   border-radius: 5px;
   padding: 5px 15px 5px 15px;
 }
-#clients #clients-slider .carousel-control-next {
+#clients #clients-slider .carousel-control-next, #related-projects #clients-slider .carousel-control-next {
   right: 25px;
 }
-#clients #clients-slider .carousel-control-next span {
+#clients #clients-slider .carousel-control-next span, #related-projects #clients-slider .carousel-control-next span {
   border-radius: 5px;
   padding: 5px 15px 5px 15px;
 }
 @media (max-width: 767.98px) {
-  #clients {
+  #clients, #related-projects {
     display: none;
   }
 }
@@ -1246,15 +1249,15 @@ footer .social-footer i {
 /******************************************************************************/
 /* portfolio-2col.html page
 */
-#items .card-deck .card {
+#items .card-deck .card, #related-projects .card-deck .card {
   border-bottom: 3px solid #e5e6e6 !important;
   border-radius: 5px !important;
 }
-#items .card-deck .card .card-body img {
+#items .card-deck .card .card-body img, #related-projects .card-deck .card .card-body img {
   height: 270px;
   width: 570px;
 }
-#items .card-deck .card .card-body .overlay {
+#items .card-deck .card .card-body .overlay, #related-projects .card-deck .card .card-body .overlay {
   position: absolute;
   bottom: 100%;
   left: 0;
@@ -1268,13 +1271,13 @@ footer .social-footer i {
   transition: 1s ease;
   text-align: center;
 }
-#items .card-deck .card .card-body .overlay .container {
+#items .card-deck .card .card-body .overlay .container, #related-projects .card-deck .card .card-body .overlay .container {
   margin-top: 20%;
 }
-#items .card-deck .card .card-body .overlay .container .overlay-links {
+#items .card-deck .card .card-body .overlay .container .overlay-links, #related-projects .card-deck .card .card-body .overlay .container .overlay-links {
   margin-top: 2rem;
 }
-#items .card-deck .card .card-body .overlay .container .overlay-links li {
+#items .card-deck .card .card-body .overlay .container .overlay-links li, #related-projects .card-deck .card .card-body .overlay .container .overlay-links li {
   background-color: #81bcb6;
   border-radius: 5px;
   margin: 4px;
@@ -1282,25 +1285,101 @@ footer .social-footer i {
   width: 2.6rem;
   padding-top: 9px;
 }
-#items .card-deck .card .card-body .overlay .container .overlay-links li:hover {
+#items .card-deck .card .card-body .overlay .container .overlay-links li:hover, #related-projects .card-deck .card .card-body .overlay .container .overlay-links li:hover {
   background-color: #e2534b;
 }
-#items .card-deck .card .card-body .overlay .container .overlay-links li i {
+#items .card-deck .card .card-body .overlay .container .overlay-links li i, #related-projects .card-deck .card .card-body .overlay .container .overlay-links li i {
   color: #fff;
   font-size: 1.5rem;
 }
-#items .card-deck .card .card-body .overlay .container .overlay-info {
+#items .card-deck .card .card-body .overlay .container .overlay-info, #related-projects .card-deck .card .card-body .overlay .container .overlay-info {
   color: #fff;
   padding: 2rem 1rem;
   font-size: 1rem;
   font-weight: 600;
 }
-#items .card-deck .card:hover .overlay, #items .card-deck .card.active .overlay {
+#items .card-deck .card:hover .overlay, #items .card-deck .card.active .overlay, #related-projects .card-deck .card:hover .overlay, #related-projects .card-deck .card.active .overlay {
   bottom: 0;
   height: 100%;
 }
 
 /* End of portfolio-2col.html page
+======================================================= */
+/* portfolio-project.html page
+*/
+#project .project-navigation h4 {
+  color: #7f8c8c;
+  font-weight: 700;
+}
+#project .project-navigation nav ul li a.page-link {
+  display: block;
+  margin-left: 0;
+  line-height: 0;
+  color: #fff;
+  background-color: 0;
+  border: 0;
+  padding: 0;
+}
+#project .project-navigation nav ul li a.page-link:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+#project .project-navigation nav ul li a.page-link i {
+  background-color: #98a3a3;
+  border-bottom: 3px solid #7f8c8c;
+  font-size: 27px;
+  font-weight: 900;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+#project .project-navigation nav ul li a.page-link i:hover {
+  background-color: #e8645a;
+  border-bottom: 3px solid #e2534b;
+}
+#project #showcase .carousel .carousel-item::after {
+  background: unset;
+  bottom: 0;
+  content: '';
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+#project .project-info {
+  margin-top: 8rem;
+}
+#project .project-info .row h6 {
+  color: #7f8c8c;
+  font-weight: 800;
+}
+#project .project-info .row a {
+  color: #e1524b;
+  font-size: .8rem;
+}
+#project .project-info .row .project-description p {
+  font-size: .9rem;
+  color: #7f8c8c;
+}
+#project .project-info .row .project-details p {
+  font-size: .8rem;
+  color: #777777;
+}
+#project .project-info .row .project-details i {
+  font-size: 1rem;
+  color: #b0b8b8;
+}
+#project .project-info .row .project-details ul li {
+  padding-bottom: 0;
+  background-color: unset;
+}
+
+#related-projects #clients-slider .carousel-inner .carousel-item .card-deck .card {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* End of portfolio-project.html page
 ======================================================= */
 .contents {
   display: inline-block;
