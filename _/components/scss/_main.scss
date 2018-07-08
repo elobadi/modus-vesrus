@@ -1880,8 +1880,8 @@ footer {
 /* blog-listing.html page
 */
 
-#blog-listing {
-  .blog-listing {
+#blog-listing, #blog-single {
+  .blog-listing, .blog-single {
     margin-top: 5rem;
 
     hr {
@@ -1942,6 +1942,12 @@ footer {
           border-radius: 5px;
           border-bottom: 3px solid #e5e6e6;
         }
+      }
+
+      .blockquote {
+        border-left: 5px solid $blue-secondary-text;
+        padding-left: 1.5rem;
+        margin-left: 4rem;
       }
 
       .image-gallery {
@@ -2068,15 +2074,242 @@ footer {
           color: $red-primary-text;
         }
 
-        i {
+        i.fa-comments, i.fa-tags {
           color: $blue-primary;
         }
       }
 
       a {
-        p.read-more, i {
+        p.read-more, i.fa-arrow-right {
           color: $red-primary-text;
         }
+      }
+
+      .post-share {
+        background-color: $secondary-bg;
+        padding: 1rem;
+        border-radius: 5px;
+
+        .share-social {
+          p {
+            font-weight: 600;
+
+          }
+          a {
+            color: unset;
+            background-color: unset;
+
+            i {
+              font-size: 1.6rem;
+              padding: 8px 13px;
+              color: #fff;
+              border-radius: 5px;
+              margin-right: .5rem;
+
+              &.fa-facebook-f {
+                background-color: #3b5998;
+              }
+
+              &.fa-twitter {
+                background-color: #1da1f2;
+              }
+
+              &.fa-google-plus {
+                background-color: #db4437;
+              }
+
+              &.fa-linkedin {
+                background-color: #007bb5;
+              }
+            }
+          }
+        }
+
+        .share-slide {
+          i {
+            background-color: #cccccc;
+            font-size: 2.2rem;
+            font-weight: 800;
+            border-radius: 5px;
+            padding: 2px 13px;
+            color: #fff;
+
+            &:hover {
+              background-color: $red-secondary;
+            }
+          }
+        }
+      }
+
+      .post-comment {
+        .comments-quantity {
+          font-size: 1.5rem;
+          font-weight: 600;
+          color: $blue-secondary-text;
+        }
+
+        .user-comment {
+          dl {
+            dt {
+              z-index: 9999;
+              margin-top: 1rem;
+
+              i {
+                font-size: 2rem;
+                color: #fff;
+                background-color: $blue-secondary-text;
+                padding: 1.3rem 1.6rem;
+                margin-right: 1rem;
+                border-radius: 5px;
+              }
+            }
+
+            dd {
+              .comment-details {
+                p {
+                  &.comment-info {
+                    margin-bottom: .5rem;
+                    margin-left: 1rem;
+                    font-size: 1rem;
+                    font-weight: 700;
+
+                    small {
+                      font-size: 85%;
+                      margin-left: 1rem;
+                    }
+
+                    span {
+                      font-weight: 500;
+                    }
+                  }
+
+                  &.comment-text {
+                    padding: .5rem 1rem 1rem 2.5rem;
+                    background-color: #f8f8f8;
+                    border-radius: 5px;
+                    margin-left: -2rem;
+                    border-bottom: 4px solid #e5e6e6;
+                  }
+                }
+              }
+            }
+          }
+
+          .replyed {
+            dl {
+              dt {
+                i {
+                  margin-left: -2rem;
+                }
+              }
+
+              dd {
+                .comment-details {
+                  margin-left: -1.5rem;
+                }
+              }
+            }
+          }
+        }
+
+        .comment-form {
+          h6 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: $blue-secondary-text;
+          }
+
+          form {
+            input, textarea {
+              border-top: 2px solid #d9dada;
+              border-left: 3px solid #d9dada;
+              background-color: #e5e6e6;
+              border-radius: 7px;
+              border-right: 3px solid #e5e6e6;
+              border-bottom: 3px solid #e5e6e6;
+
+              &:focus {
+                box-shadow: none !important;
+              }
+            }
+
+            label {
+              color: #7f8c8c;
+              font-size: 1.1rem;
+            }
+
+            button {
+              background-color: #e8645a;
+              border-bottom: 4px solid #e2534b;
+              color: #fff;
+              padding: .6rem 4.5rem;
+              font-weight: 600;
+            }
+          }
+        }
+
+        // Large devices (desktops, less than 1200px)
+        @media (max-width: 1199.98px) {
+          .user-comment {
+            dl {
+              dd {
+                .comment-details {
+                  margin-left: 1rem;
+                }
+              }
+            }
+
+            .replyed {
+              dl {
+                dd {
+                  .comment-details {
+                    margin-left: -.5rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        // Medium devices (tablets, less than 992px)
+        @media (max-width: 991.98px) {}
+
+        // Small devices (landscape phones, less than 768px)
+        @media (max-width: 767.98px) {
+          .user-comment {
+            dl {
+              dd {
+                .comment-details {
+                  margin-left: 5rem;
+                  margin-top: -3.1rem;
+                }
+              }
+            }
+
+            .replyed {
+              dl {
+                dt {
+                  i {
+                    margin-left: 3rem;
+                  }
+                }
+
+                dd {
+                  .comment-details {
+                    margin-left: 8rem;
+                    margin-top: -3rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        // Extra small devices (portrait phones, less than 576px)
+        @media (max-width: 575.98px) {}
+
+
+
       }
     }
 

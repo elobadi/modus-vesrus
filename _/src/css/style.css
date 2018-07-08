@@ -1387,68 +1387,73 @@ footer .social-footer i {
 /******************************************************************************/
 /* blog-listing.html page
 */
-#blog-listing .blog-listing {
+#blog-listing .blog-listing, #blog-listing .blog-single, #blog-single .blog-listing, #blog-single .blog-single {
   margin-top: 5rem;
 }
-#blog-listing .blog-listing hr {
+#blog-listing .blog-listing hr, #blog-listing .blog-single hr, #blog-single .blog-listing hr, #blog-single .blog-single hr {
   border-top: 3px solid rgba(0, 0, 0, 0.1);
   margin-left: -15px;
   margin-right: -15px;
 }
 @media (max-width: 767.98px) {
-  #blog-listing .blog-listing .blog-main .post-date-type {
+  #blog-listing .blog-listing .blog-main .post-date-type, #blog-listing .blog-single .blog-main .post-date-type, #blog-single .blog-listing .blog-main .post-date-type, #blog-single .blog-single .blog-main .post-date-type {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
 }
-#blog-listing .blog-listing .blog-main .publish-date {
+#blog-listing .blog-listing .blog-main .publish-date, #blog-listing .blog-single .blog-main .publish-date, #blog-single .blog-listing .blog-main .publish-date, #blog-single .blog-single .blog-main .publish-date {
   width: 70px;
   height: 80px;
   background-color: #f8f8f8;
   border-radius: 5px;
   border-bottom: 3px solid #e5e6e6;
 }
-#blog-listing .blog-listing .blog-main .publish-date p {
+#blog-listing .blog-listing .blog-main .publish-date p, #blog-listing .blog-single .blog-main .publish-date p, #blog-single .blog-listing .blog-main .publish-date p, #blog-single .blog-single .blog-main .publish-date p {
   margin-bottom: 0;
   color: #7f8c8c;
 }
-#blog-listing .blog-listing .blog-main .publish-date p:first-child {
+#blog-listing .blog-listing .blog-main .publish-date p:first-child, #blog-listing .blog-single .blog-main .publish-date p:first-child, #blog-single .blog-listing .blog-main .publish-date p:first-child, #blog-single .blog-single .blog-main .publish-date p:first-child {
   font-size: 1.2rem;
   padding-top: .5rem;
 }
-#blog-listing .blog-listing .blog-main .publish-date p:last-child {
+#blog-listing .blog-listing .blog-main .publish-date p:last-child, #blog-listing .blog-single .blog-main .publish-date p:last-child, #blog-single .blog-listing .blog-main .publish-date p:last-child, #blog-single .blog-single .blog-main .publish-date p:last-child {
   font-size: 1.8rem;
   font-weight: 800;
   padding: 0;
 }
-#blog-listing .blog-listing .blog-main .post-type {
+#blog-listing .blog-listing .blog-main .post-type, #blog-listing .blog-single .blog-main .post-type, #blog-single .blog-listing .blog-main .post-type, #blog-single .blog-single .blog-main .post-type {
   width: 70px;
   height: 70px;
   background-color: #7f8c8c;
   border-radius: 5px;
   border-bottom: 3px solid #e5e6e6;
 }
-#blog-listing .blog-listing .blog-main .post-type i {
+#blog-listing .blog-listing .blog-main .post-type i, #blog-listing .blog-single .blog-main .post-type i, #blog-single .blog-listing .blog-main .post-type i, #blog-single .blog-single .blog-main .post-type i {
   color: #fff;
   font-size: 1.5rem;
 }
-#blog-listing .blog-listing .blog-main .blog-image {
+#blog-listing .blog-listing .blog-main .blog-image, #blog-listing .blog-single .blog-main .blog-image, #blog-single .blog-listing .blog-main .blog-image, #blog-single .blog-single .blog-main .blog-image {
   margin-bottom: 2rem;
 }
-#blog-listing .blog-listing .blog-main .blog-image img {
+#blog-listing .blog-listing .blog-main .blog-image img, #blog-listing .blog-single .blog-main .blog-image img, #blog-single .blog-listing .blog-main .blog-image img, #blog-single .blog-single .blog-main .blog-image img {
   background-color: #f8f8f8;
   border-radius: 5px;
   border-bottom: 3px solid #e5e6e6;
 }
-#blog-listing .blog-listing .blog-main .image-gallery #showcase .carousel .carousel-inner {
+#blog-listing .blog-listing .blog-main .blockquote, #blog-listing .blog-single .blog-main .blockquote, #blog-single .blog-listing .blog-main .blockquote, #blog-single .blog-single .blog-main .blockquote {
+  border-left: 5px solid #7f8c8c;
+  padding-left: 1.5rem;
+  margin-left: 4rem;
+}
+#blog-listing .blog-listing .blog-main .image-gallery #showcase .carousel .carousel-inner, #blog-listing .blog-single .blog-main .image-gallery #showcase .carousel .carousel-inner, #blog-single .blog-listing .blog-main .image-gallery #showcase .carousel .carousel-inner, #blog-single .blog-single .blog-main .image-gallery #showcase .carousel .carousel-inner {
   border-bottom: 3px solid #e5e6e6;
   border-radius: 5px;
 }
-#blog-listing .blog-listing .blog-main .image-gallery #showcase .carousel .carousel-inner img {
+#blog-listing .blog-listing .blog-main .image-gallery #showcase .carousel .carousel-inner img, #blog-listing .blog-single .blog-main .image-gallery #showcase .carousel .carousel-inner img, #blog-single .blog-listing .blog-main .image-gallery #showcase .carousel .carousel-inner img, #blog-single .blog-single .blog-main .image-gallery #showcase .carousel .carousel-inner img {
   background-color: #f8f8f8;
 }
-#blog-listing .blog-listing .blog-main .image-gallery #showcase .carousel .carousel-inner .carousel-item::after {
+#blog-listing .blog-listing .blog-main .image-gallery #showcase .carousel .carousel-inner .carousel-item::after, #blog-listing .blog-single .blog-main .image-gallery #showcase .carousel .carousel-inner .carousel-item::after, #blog-single .blog-listing .blog-main .image-gallery #showcase .carousel .carousel-inner .carousel-item::after, #blog-single .blog-single .blog-main .image-gallery #showcase .carousel .carousel-inner .carousel-item::after {
   background: unset;
   bottom: 0;
   content: '';
@@ -1458,13 +1463,13 @@ footer .social-footer i {
   right: 0;
   top: 0;
 }
-#blog-listing .blog-listing .blog-main .video .video-js {
+#blog-listing .blog-listing .blog-main .video .video-js, #blog-listing .blog-single .blog-main .video .video-js, #blog-single .blog-listing .blog-main .video .video-js, #blog-single .blog-single .blog-main .video .video-js {
   background-color: #f8f8f8;
   border-radius: 5px;
   border-bottom: 3px solid #e5e6e6;
   width: 100%;
 }
-#blog-listing .blog-listing .blog-main .video .video-js .vjs-big-play-button {
+#blog-listing .blog-listing .blog-main .video .video-js .vjs-big-play-button, #blog-listing .blog-single .blog-main .video .video-js .vjs-big-play-button, #blog-single .blog-listing .blog-main .video .video-js .vjs-big-play-button, #blog-single .blog-single .blog-main .video .video-js .vjs-big-play-button {
   font-size: 10rem;
   line-height: 0;
   height: 0;
@@ -1474,11 +1479,11 @@ footer .social-footer i {
   border: none;
   color: #ececec;
 }
-#blog-listing .blog-listing .blog-main .video .video-js .vjs-poster {
+#blog-listing .blog-listing .blog-main .video .video-js .vjs-poster, #blog-listing .blog-single .blog-main .video .video-js .vjs-poster, #blog-single .blog-listing .blog-main .video .video-js .vjs-poster, #blog-single .blog-single .blog-main .video .video-js .vjs-poster {
   background-color: #f8f8f8;
   border-radius: 5px;
 }
-#blog-listing .blog-listing .blog-main .video .video-js .vjs-control-bar {
+#blog-listing .blog-listing .blog-main .video .video-js .vjs-control-bar, #blog-listing .blog-single .blog-main .video .video-js .vjs-control-bar, #blog-single .blog-listing .blog-main .video .video-js .vjs-control-bar, #blog-single .blog-single .blog-main .video .video-js .vjs-control-bar {
   background-color: #7f8c8c;
   border-radius: 5px;
   width: auto;
@@ -1488,103 +1493,237 @@ footer .social-footer i {
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
-#blog-listing .blog-listing .blog-main .video .video-js .vjs-control-bar .vjs-button .vjs-icon-placeholder::before {
+#blog-listing .blog-listing .blog-main .video .video-js .vjs-control-bar .vjs-button .vjs-icon-placeholder::before, #blog-listing .blog-single .blog-main .video .video-js .vjs-control-bar .vjs-button .vjs-icon-placeholder::before, #blog-single .blog-listing .blog-main .video .video-js .vjs-control-bar .vjs-button .vjs-icon-placeholder::before, #blog-single .blog-single .blog-main .video .video-js .vjs-control-bar .vjs-button .vjs-icon-placeholder::before {
   font-size: 2.5rem;
   line-height: 1.2;
 }
-#blog-listing .blog-listing .blog-main .video .video-js .vjs-control-bar .vjs-volume-panel {
+#blog-listing .blog-listing .blog-main .video .video-js .vjs-control-bar .vjs-volume-panel, #blog-listing .blog-single .blog-main .video .video-js .vjs-control-bar .vjs-volume-panel, #blog-single .blog-listing .blog-main .video .video-js .vjs-control-bar .vjs-volume-panel, #blog-single .blog-single .blog-main .video .video-js .vjs-control-bar .vjs-volume-panel {
   display: none;
 }
-#blog-listing .blog-listing .blog-main .video .video-js .vjs-control-bar .vjs-control {
+#blog-listing .blog-listing .blog-main .video .video-js .vjs-control-bar .vjs-control, #blog-listing .blog-single .blog-main .video .video-js .vjs-control-bar .vjs-control, #blog-single .blog-listing .blog-main .video .video-js .vjs-control-bar .vjs-control, #blog-single .blog-single .blog-main .video .video-js .vjs-control-bar .vjs-control {
   width: 4rem;
 }
-#blog-listing .blog-listing .blog-main .video .video-js .vjs-control-bar .vjs-progress-control .vjs-slider {
+#blog-listing .blog-listing .blog-main .video .video-js .vjs-control-bar .vjs-progress-control .vjs-slider, #blog-listing .blog-single .blog-main .video .video-js .vjs-control-bar .vjs-progress-control .vjs-slider, #blog-single .blog-listing .blog-main .video .video-js .vjs-control-bar .vjs-progress-control .vjs-slider, #blog-single .blog-single .blog-main .video .video-js .vjs-control-bar .vjs-progress-control .vjs-slider {
   border-radius: 10px;
   background-color: #5d6666;
   height: 1.2rem;
 }
-#blog-listing .blog-listing .blog-main .video .video-js .vjs-control-bar .vjs-progress-control .vjs-slider .vjs-load-progress div {
+#blog-listing .blog-listing .blog-main .video .video-js .vjs-control-bar .vjs-progress-control .vjs-slider .vjs-load-progress div, #blog-listing .blog-single .blog-main .video .video-js .vjs-control-bar .vjs-progress-control .vjs-slider .vjs-load-progress div, #blog-single .blog-listing .blog-main .video .video-js .vjs-control-bar .vjs-progress-control .vjs-slider .vjs-load-progress div, #blog-single .blog-single .blog-main .video .video-js .vjs-control-bar .vjs-progress-control .vjs-slider .vjs-load-progress div {
   background: #e5e6e6;
   border-radius: 10px;
 }
-#blog-listing .blog-listing .blog-main .video .video-js .vjs-control-bar .vjs-progress-control .vjs-slider .vjs-slider-bar {
+#blog-listing .blog-listing .blog-main .video .video-js .vjs-control-bar .vjs-progress-control .vjs-slider .vjs-slider-bar, #blog-listing .blog-single .blog-main .video .video-js .vjs-control-bar .vjs-progress-control .vjs-slider .vjs-slider-bar, #blog-single .blog-listing .blog-main .video .video-js .vjs-control-bar .vjs-progress-control .vjs-slider .vjs-slider-bar, #blog-single .blog-single .blog-main .video .video-js .vjs-control-bar .vjs-progress-control .vjs-slider .vjs-slider-bar {
   background: #e2534b;
   border-radius: 10px;
 }
-#blog-listing .blog-listing .blog-main .video .video-js .vjs-control-bar .vjs-progress-control .vjs-slider .vjs-play-progress::before {
+#blog-listing .blog-listing .blog-main .video .video-js .vjs-control-bar .vjs-progress-control .vjs-slider .vjs-play-progress::before, #blog-listing .blog-single .blog-main .video .video-js .vjs-control-bar .vjs-progress-control .vjs-slider .vjs-play-progress::before, #blog-single .blog-listing .blog-main .video .video-js .vjs-control-bar .vjs-progress-control .vjs-slider .vjs-play-progress::before, #blog-single .blog-single .blog-main .video .video-js .vjs-control-bar .vjs-progress-control .vjs-slider .vjs-play-progress::before {
   top: -0.4rem;
   right: -0.9rem;
   font-size: 2rem;
 }
-#blog-listing .blog-listing .blog-main .video .video-js .vjs-control-bar .vjs-time-control {
+#blog-listing .blog-listing .blog-main .video .video-js .vjs-control-bar .vjs-time-control, #blog-listing .blog-single .blog-main .video .video-js .vjs-control-bar .vjs-time-control, #blog-single .blog-listing .blog-main .video .video-js .vjs-control-bar .vjs-time-control, #blog-single .blog-single .blog-main .video .video-js .vjs-control-bar .vjs-time-control {
   font-size: .9rem;
   line-height: 3rem;
 }
-#blog-listing .blog-listing .blog-main h5 {
+#blog-listing .blog-listing .blog-main h5, #blog-listing .blog-single .blog-main h5, #blog-single .blog-listing .blog-main h5, #blog-single .blog-single .blog-main h5 {
   font-size: 1.4rem;
   color: #76c7c0;
   font-weight: 600;
 }
-#blog-listing .blog-listing .blog-main p.post-details, #blog-listing .blog-listing .blog-main p {
+#blog-listing .blog-listing .blog-main p.post-details, #blog-listing .blog-listing .blog-main p, #blog-listing .blog-single .blog-main p.post-details, #blog-listing .blog-single .blog-main p, #blog-single .blog-listing .blog-main p.post-details, #blog-single .blog-listing .blog-main p, #blog-single .blog-single .blog-main p.post-details, #blog-single .blog-single .blog-main p {
   font-size: .9rem;
   color: #7f8c8c;
 }
-#blog-listing .blog-listing .blog-main p.post-details span, #blog-listing .blog-listing .blog-main p span {
+#blog-listing .blog-listing .blog-main p.post-details span, #blog-listing .blog-listing .blog-main p span, #blog-listing .blog-single .blog-main p.post-details span, #blog-listing .blog-single .blog-main p span, #blog-single .blog-listing .blog-main p.post-details span, #blog-single .blog-listing .blog-main p span, #blog-single .blog-single .blog-main p.post-details span, #blog-single .blog-single .blog-main p span {
   color: #e1524b;
 }
-#blog-listing .blog-listing .blog-main p.post-details i, #blog-listing .blog-listing .blog-main p i {
+#blog-listing .blog-listing .blog-main p.post-details i.fa-comments, #blog-listing .blog-listing .blog-main p.post-details i.fa-tags, #blog-listing .blog-listing .blog-main p i.fa-comments, #blog-listing .blog-listing .blog-main p i.fa-tags, #blog-listing .blog-single .blog-main p.post-details i.fa-comments, #blog-listing .blog-single .blog-main p.post-details i.fa-tags, #blog-listing .blog-single .blog-main p i.fa-comments, #blog-listing .blog-single .blog-main p i.fa-tags, #blog-single .blog-listing .blog-main p.post-details i.fa-comments, #blog-single .blog-listing .blog-main p.post-details i.fa-tags, #blog-single .blog-listing .blog-main p i.fa-comments, #blog-single .blog-listing .blog-main p i.fa-tags, #blog-single .blog-single .blog-main p.post-details i.fa-comments, #blog-single .blog-single .blog-main p.post-details i.fa-tags, #blog-single .blog-single .blog-main p i.fa-comments, #blog-single .blog-single .blog-main p i.fa-tags {
   color: #76c7c0;
 }
-#blog-listing .blog-listing .blog-main a p.read-more, #blog-listing .blog-listing .blog-main a i {
+#blog-listing .blog-listing .blog-main a p.read-more, #blog-listing .blog-listing .blog-main a i.fa-arrow-right, #blog-listing .blog-single .blog-main a p.read-more, #blog-listing .blog-single .blog-main a i.fa-arrow-right, #blog-single .blog-listing .blog-main a p.read-more, #blog-single .blog-listing .blog-main a i.fa-arrow-right, #blog-single .blog-single .blog-main a p.read-more, #blog-single .blog-single .blog-main a i.fa-arrow-right {
   color: #e1524b;
 }
-#blog-listing .blog-listing .blog-sidebar h6 {
+#blog-listing .blog-listing .blog-main .post-share, #blog-listing .blog-single .blog-main .post-share, #blog-single .blog-listing .blog-main .post-share, #blog-single .blog-single .blog-main .post-share {
+  background-color: #ececec;
+  padding: 1rem;
+  border-radius: 5px;
+}
+#blog-listing .blog-listing .blog-main .post-share .share-social p, #blog-listing .blog-single .blog-main .post-share .share-social p, #blog-single .blog-listing .blog-main .post-share .share-social p, #blog-single .blog-single .blog-main .post-share .share-social p {
+  font-weight: 600;
+}
+#blog-listing .blog-listing .blog-main .post-share .share-social a, #blog-listing .blog-single .blog-main .post-share .share-social a, #blog-single .blog-listing .blog-main .post-share .share-social a, #blog-single .blog-single .blog-main .post-share .share-social a {
+  color: unset;
+  background-color: unset;
+}
+#blog-listing .blog-listing .blog-main .post-share .share-social a i, #blog-listing .blog-single .blog-main .post-share .share-social a i, #blog-single .blog-listing .blog-main .post-share .share-social a i, #blog-single .blog-single .blog-main .post-share .share-social a i {
+  font-size: 1.6rem;
+  padding: 8px 13px;
+  color: #fff;
+  border-radius: 5px;
+  margin-right: .5rem;
+}
+#blog-listing .blog-listing .blog-main .post-share .share-social a i.fa-facebook-f, #blog-listing .blog-single .blog-main .post-share .share-social a i.fa-facebook-f, #blog-single .blog-listing .blog-main .post-share .share-social a i.fa-facebook-f, #blog-single .blog-single .blog-main .post-share .share-social a i.fa-facebook-f {
+  background-color: #3b5998;
+}
+#blog-listing .blog-listing .blog-main .post-share .share-social a i.fa-twitter, #blog-listing .blog-single .blog-main .post-share .share-social a i.fa-twitter, #blog-single .blog-listing .blog-main .post-share .share-social a i.fa-twitter, #blog-single .blog-single .blog-main .post-share .share-social a i.fa-twitter {
+  background-color: #1da1f2;
+}
+#blog-listing .blog-listing .blog-main .post-share .share-social a i.fa-google-plus, #blog-listing .blog-single .blog-main .post-share .share-social a i.fa-google-plus, #blog-single .blog-listing .blog-main .post-share .share-social a i.fa-google-plus, #blog-single .blog-single .blog-main .post-share .share-social a i.fa-google-plus {
+  background-color: #db4437;
+}
+#blog-listing .blog-listing .blog-main .post-share .share-social a i.fa-linkedin, #blog-listing .blog-single .blog-main .post-share .share-social a i.fa-linkedin, #blog-single .blog-listing .blog-main .post-share .share-social a i.fa-linkedin, #blog-single .blog-single .blog-main .post-share .share-social a i.fa-linkedin {
+  background-color: #007bb5;
+}
+#blog-listing .blog-listing .blog-main .post-share .share-slide i, #blog-listing .blog-single .blog-main .post-share .share-slide i, #blog-single .blog-listing .blog-main .post-share .share-slide i, #blog-single .blog-single .blog-main .post-share .share-slide i {
+  background-color: #cccccc;
+  font-size: 2.2rem;
+  font-weight: 800;
+  border-radius: 5px;
+  padding: 2px 13px;
+  color: #fff;
+}
+#blog-listing .blog-listing .blog-main .post-share .share-slide i:hover, #blog-listing .blog-single .blog-main .post-share .share-slide i:hover, #blog-single .blog-listing .blog-main .post-share .share-slide i:hover, #blog-single .blog-single .blog-main .post-share .share-slide i:hover {
+  background-color: #e2534b;
+}
+#blog-listing .blog-listing .blog-main .post-comment .comments-quantity, #blog-listing .blog-single .blog-main .post-comment .comments-quantity, #blog-single .blog-listing .blog-main .post-comment .comments-quantity, #blog-single .blog-single .blog-main .post-comment .comments-quantity {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #7f8c8c;
+}
+#blog-listing .blog-listing .blog-main .post-comment .user-comment dl dt, #blog-listing .blog-single .blog-main .post-comment .user-comment dl dt, #blog-single .blog-listing .blog-main .post-comment .user-comment dl dt, #blog-single .blog-single .blog-main .post-comment .user-comment dl dt {
+  z-index: 9999;
+  margin-top: 1rem;
+}
+#blog-listing .blog-listing .blog-main .post-comment .user-comment dl dt i, #blog-listing .blog-single .blog-main .post-comment .user-comment dl dt i, #blog-single .blog-listing .blog-main .post-comment .user-comment dl dt i, #blog-single .blog-single .blog-main .post-comment .user-comment dl dt i {
+  font-size: 2rem;
+  color: #fff;
+  background-color: #7f8c8c;
+  padding: 1.3rem 1.6rem;
+  margin-right: 1rem;
+  border-radius: 5px;
+}
+#blog-listing .blog-listing .blog-main .post-comment .user-comment dl dd .comment-details p.comment-info, #blog-listing .blog-single .blog-main .post-comment .user-comment dl dd .comment-details p.comment-info, #blog-single .blog-listing .blog-main .post-comment .user-comment dl dd .comment-details p.comment-info, #blog-single .blog-single .blog-main .post-comment .user-comment dl dd .comment-details p.comment-info {
+  margin-bottom: .5rem;
+  margin-left: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+#blog-listing .blog-listing .blog-main .post-comment .user-comment dl dd .comment-details p.comment-info small, #blog-listing .blog-single .blog-main .post-comment .user-comment dl dd .comment-details p.comment-info small, #blog-single .blog-listing .blog-main .post-comment .user-comment dl dd .comment-details p.comment-info small, #blog-single .blog-single .blog-main .post-comment .user-comment dl dd .comment-details p.comment-info small {
+  font-size: 85%;
+  margin-left: 1rem;
+}
+#blog-listing .blog-listing .blog-main .post-comment .user-comment dl dd .comment-details p.comment-info span, #blog-listing .blog-single .blog-main .post-comment .user-comment dl dd .comment-details p.comment-info span, #blog-single .blog-listing .blog-main .post-comment .user-comment dl dd .comment-details p.comment-info span, #blog-single .blog-single .blog-main .post-comment .user-comment dl dd .comment-details p.comment-info span {
+  font-weight: 500;
+}
+#blog-listing .blog-listing .blog-main .post-comment .user-comment dl dd .comment-details p.comment-text, #blog-listing .blog-single .blog-main .post-comment .user-comment dl dd .comment-details p.comment-text, #blog-single .blog-listing .blog-main .post-comment .user-comment dl dd .comment-details p.comment-text, #blog-single .blog-single .blog-main .post-comment .user-comment dl dd .comment-details p.comment-text {
+  padding: .5rem 1rem 1rem 2.5rem;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  margin-left: -2rem;
+  border-bottom: 4px solid #e5e6e6;
+}
+#blog-listing .blog-listing .blog-main .post-comment .user-comment .replyed dl dt i, #blog-listing .blog-single .blog-main .post-comment .user-comment .replyed dl dt i, #blog-single .blog-listing .blog-main .post-comment .user-comment .replyed dl dt i, #blog-single .blog-single .blog-main .post-comment .user-comment .replyed dl dt i {
+  margin-left: -2rem;
+}
+#blog-listing .blog-listing .blog-main .post-comment .user-comment .replyed dl dd .comment-details, #blog-listing .blog-single .blog-main .post-comment .user-comment .replyed dl dd .comment-details, #blog-single .blog-listing .blog-main .post-comment .user-comment .replyed dl dd .comment-details, #blog-single .blog-single .blog-main .post-comment .user-comment .replyed dl dd .comment-details {
+  margin-left: -1.5rem;
+}
+#blog-listing .blog-listing .blog-main .post-comment .comment-form h6, #blog-listing .blog-single .blog-main .post-comment .comment-form h6, #blog-single .blog-listing .blog-main .post-comment .comment-form h6, #blog-single .blog-single .blog-main .post-comment .comment-form h6 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #7f8c8c;
+}
+#blog-listing .blog-listing .blog-main .post-comment .comment-form form input, #blog-listing .blog-listing .blog-main .post-comment .comment-form form textarea, #blog-listing .blog-single .blog-main .post-comment .comment-form form input, #blog-listing .blog-single .blog-main .post-comment .comment-form form textarea, #blog-single .blog-listing .blog-main .post-comment .comment-form form input, #blog-single .blog-listing .blog-main .post-comment .comment-form form textarea, #blog-single .blog-single .blog-main .post-comment .comment-form form input, #blog-single .blog-single .blog-main .post-comment .comment-form form textarea {
+  border-top: 2px solid #d9dada;
+  border-left: 3px solid #d9dada;
+  background-color: #e5e6e6;
+  border-radius: 7px;
+  border-right: 3px solid #e5e6e6;
+  border-bottom: 3px solid #e5e6e6;
+}
+#blog-listing .blog-listing .blog-main .post-comment .comment-form form input:focus, #blog-listing .blog-listing .blog-main .post-comment .comment-form form textarea:focus, #blog-listing .blog-single .blog-main .post-comment .comment-form form input:focus, #blog-listing .blog-single .blog-main .post-comment .comment-form form textarea:focus, #blog-single .blog-listing .blog-main .post-comment .comment-form form input:focus, #blog-single .blog-listing .blog-main .post-comment .comment-form form textarea:focus, #blog-single .blog-single .blog-main .post-comment .comment-form form input:focus, #blog-single .blog-single .blog-main .post-comment .comment-form form textarea:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+#blog-listing .blog-listing .blog-main .post-comment .comment-form form label, #blog-listing .blog-single .blog-main .post-comment .comment-form form label, #blog-single .blog-listing .blog-main .post-comment .comment-form form label, #blog-single .blog-single .blog-main .post-comment .comment-form form label {
+  color: #7f8c8c;
+  font-size: 1.1rem;
+}
+#blog-listing .blog-listing .blog-main .post-comment .comment-form form button, #blog-listing .blog-single .blog-main .post-comment .comment-form form button, #blog-single .blog-listing .blog-main .post-comment .comment-form form button, #blog-single .blog-single .blog-main .post-comment .comment-form form button {
+  background-color: #e8645a;
+  border-bottom: 4px solid #e2534b;
+  color: #fff;
+  padding: .6rem 4.5rem;
+  font-weight: 600;
+}
+@media (max-width: 1199.98px) {
+  #blog-listing .blog-listing .blog-main .post-comment .user-comment dl dd .comment-details, #blog-listing .blog-single .blog-main .post-comment .user-comment dl dd .comment-details, #blog-single .blog-listing .blog-main .post-comment .user-comment dl dd .comment-details, #blog-single .blog-single .blog-main .post-comment .user-comment dl dd .comment-details {
+    margin-left: 1rem;
+  }
+  #blog-listing .blog-listing .blog-main .post-comment .user-comment .replyed dl dd .comment-details, #blog-listing .blog-single .blog-main .post-comment .user-comment .replyed dl dd .comment-details, #blog-single .blog-listing .blog-main .post-comment .user-comment .replyed dl dd .comment-details, #blog-single .blog-single .blog-main .post-comment .user-comment .replyed dl dd .comment-details {
+    margin-left: -.5rem;
+  }
+}
+@media (max-width: 767.98px) {
+  #blog-listing .blog-listing .blog-main .post-comment .user-comment dl dd .comment-details, #blog-listing .blog-single .blog-main .post-comment .user-comment dl dd .comment-details, #blog-single .blog-listing .blog-main .post-comment .user-comment dl dd .comment-details, #blog-single .blog-single .blog-main .post-comment .user-comment dl dd .comment-details {
+    margin-left: 5rem;
+    margin-top: -3.1rem;
+  }
+  #blog-listing .blog-listing .blog-main .post-comment .user-comment .replyed dl dt i, #blog-listing .blog-single .blog-main .post-comment .user-comment .replyed dl dt i, #blog-single .blog-listing .blog-main .post-comment .user-comment .replyed dl dt i, #blog-single .blog-single .blog-main .post-comment .user-comment .replyed dl dt i {
+    margin-left: 3rem;
+  }
+  #blog-listing .blog-listing .blog-main .post-comment .user-comment .replyed dl dd .comment-details, #blog-listing .blog-single .blog-main .post-comment .user-comment .replyed dl dd .comment-details, #blog-single .blog-listing .blog-main .post-comment .user-comment .replyed dl dd .comment-details, #blog-single .blog-single .blog-main .post-comment .user-comment .replyed dl dd .comment-details {
+    margin-left: 8rem;
+    margin-top: -3rem;
+  }
+}
+#blog-listing .blog-listing .blog-sidebar h6, #blog-listing .blog-single .blog-sidebar h6, #blog-single .blog-listing .blog-sidebar h6, #blog-single .blog-single .blog-sidebar h6 {
   color: #7f8c8c;
   font-size: 1rem;
   font-weight: 800;
 }
-#blog-listing .blog-listing .blog-sidebar .categories, #blog-listing .blog-listing .blog-sidebar .recent-posts, #blog-listing .blog-listing .blog-sidebar .archive {
+#blog-listing .blog-listing .blog-sidebar .categories, #blog-listing .blog-listing .blog-sidebar .recent-posts, #blog-listing .blog-listing .blog-sidebar .archive, #blog-listing .blog-single .blog-sidebar .categories, #blog-listing .blog-single .blog-sidebar .recent-posts, #blog-listing .blog-single .blog-sidebar .archive, #blog-single .blog-listing .blog-sidebar .categories, #blog-single .blog-listing .blog-sidebar .recent-posts, #blog-single .blog-listing .blog-sidebar .archive, #blog-single .blog-single .blog-sidebar .categories, #blog-single .blog-single .blog-sidebar .recent-posts, #blog-single .blog-single .blog-sidebar .archive {
   margin-left: 1rem;
 }
-#blog-listing .blog-listing .blog-sidebar .categories ul, #blog-listing .blog-listing .blog-sidebar .recent-posts ul, #blog-listing .blog-listing .blog-sidebar .archive ul {
+#blog-listing .blog-listing .blog-sidebar .categories ul, #blog-listing .blog-listing .blog-sidebar .recent-posts ul, #blog-listing .blog-listing .blog-sidebar .archive ul, #blog-listing .blog-single .blog-sidebar .categories ul, #blog-listing .blog-single .blog-sidebar .recent-posts ul, #blog-listing .blog-single .blog-sidebar .archive ul, #blog-single .blog-listing .blog-sidebar .categories ul, #blog-single .blog-listing .blog-sidebar .recent-posts ul, #blog-single .blog-listing .blog-sidebar .archive ul, #blog-single .blog-single .blog-sidebar .categories ul, #blog-single .blog-single .blog-sidebar .recent-posts ul, #blog-single .blog-single .blog-sidebar .archive ul {
   margin-left: 1rem;
 }
-#blog-listing .blog-listing .blog-sidebar .categories ul li, #blog-listing .blog-listing .blog-sidebar .recent-posts ul li, #blog-listing .blog-listing .blog-sidebar .archive ul li {
+#blog-listing .blog-listing .blog-sidebar .categories ul li, #blog-listing .blog-listing .blog-sidebar .recent-posts ul li, #blog-listing .blog-listing .blog-sidebar .archive ul li, #blog-listing .blog-single .blog-sidebar .categories ul li, #blog-listing .blog-single .blog-sidebar .recent-posts ul li, #blog-listing .blog-single .blog-sidebar .archive ul li, #blog-single .blog-listing .blog-sidebar .categories ul li, #blog-single .blog-listing .blog-sidebar .recent-posts ul li, #blog-single .blog-listing .blog-sidebar .archive ul li, #blog-single .blog-single .blog-sidebar .categories ul li, #blog-single .blog-single .blog-sidebar .recent-posts ul li, #blog-single .blog-single .blog-sidebar .archive ul li {
   color: #e2534b;
   font-size: .9rem;
   font-weight: 600;
   padding-bottom: 5px;
   margin-bottom: .4rem;
 }
-#blog-listing .blog-listing .blog-sidebar .categories ul li a, #blog-listing .blog-listing .blog-sidebar .recent-posts ul li a, #blog-listing .blog-listing .blog-sidebar .archive ul li a {
+#blog-listing .blog-listing .blog-sidebar .categories ul li a, #blog-listing .blog-listing .blog-sidebar .recent-posts ul li a, #blog-listing .blog-listing .blog-sidebar .archive ul li a, #blog-listing .blog-single .blog-sidebar .categories ul li a, #blog-listing .blog-single .blog-sidebar .recent-posts ul li a, #blog-listing .blog-single .blog-sidebar .archive ul li a, #blog-single .blog-listing .blog-sidebar .categories ul li a, #blog-single .blog-listing .blog-sidebar .recent-posts ul li a, #blog-single .blog-listing .blog-sidebar .archive ul li a, #blog-single .blog-single .blog-sidebar .categories ul li a, #blog-single .blog-single .blog-sidebar .recent-posts ul li a, #blog-single .blog-single .blog-sidebar .archive ul li a {
   color: #e2534b;
 }
-#blog-listing .blog-listing .blog-sidebar .categories ul li a:hover, #blog-listing .blog-listing .blog-sidebar .recent-posts ul li a:hover, #blog-listing .blog-listing .blog-sidebar .archive ul li a:hover {
+#blog-listing .blog-listing .blog-sidebar .categories ul li a:hover, #blog-listing .blog-listing .blog-sidebar .recent-posts ul li a:hover, #blog-listing .blog-listing .blog-sidebar .archive ul li a:hover, #blog-listing .blog-single .blog-sidebar .categories ul li a:hover, #blog-listing .blog-single .blog-sidebar .recent-posts ul li a:hover, #blog-listing .blog-single .blog-sidebar .archive ul li a:hover, #blog-single .blog-listing .blog-sidebar .categories ul li a:hover, #blog-single .blog-listing .blog-sidebar .recent-posts ul li a:hover, #blog-single .blog-listing .blog-sidebar .archive ul li a:hover, #blog-single .blog-single .blog-sidebar .categories ul li a:hover, #blog-single .blog-single .blog-sidebar .recent-posts ul li a:hover, #blog-single .blog-single .blog-sidebar .archive ul li a:hover {
   color: unset;
 }
-#blog-listing .blog-listing .blog-sidebar .categories ul li i, #blog-listing .blog-listing .blog-sidebar .recent-posts ul li i, #blog-listing .blog-listing .blog-sidebar .archive ul li i {
+#blog-listing .blog-listing .blog-sidebar .categories ul li i, #blog-listing .blog-listing .blog-sidebar .recent-posts ul li i, #blog-listing .blog-listing .blog-sidebar .archive ul li i, #blog-listing .blog-single .blog-sidebar .categories ul li i, #blog-listing .blog-single .blog-sidebar .recent-posts ul li i, #blog-listing .blog-single .blog-sidebar .archive ul li i, #blog-single .blog-listing .blog-sidebar .categories ul li i, #blog-single .blog-listing .blog-sidebar .recent-posts ul li i, #blog-single .blog-listing .blog-sidebar .archive ul li i, #blog-single .blog-single .blog-sidebar .categories ul li i, #blog-single .blog-single .blog-sidebar .recent-posts ul li i, #blog-single .blog-single .blog-sidebar .archive ul li i {
   color: #62bdbd;
   font-size: .9rem;
   margin-right: .8rem;
 }
-#blog-listing .blog-listing .blog-sidebar .recent-posts {
+#blog-listing .blog-listing .blog-sidebar .recent-posts, #blog-listing .blog-single .blog-sidebar .recent-posts, #blog-single .blog-listing .blog-sidebar .recent-posts, #blog-single .blog-single .blog-sidebar .recent-posts {
   margin-left: 1rem;
 }
-#blog-listing .blog-listing .blog-sidebar .recent-posts ul li i {
+#blog-listing .blog-listing .blog-sidebar .recent-posts ul li i, #blog-listing .blog-single .blog-sidebar .recent-posts ul li i, #blog-single .blog-listing .blog-sidebar .recent-posts ul li i, #blog-single .blog-single .blog-sidebar .recent-posts ul li i {
   margin-right: 0;
 }
-#blog-listing .blog-listing .blog-sidebar .recent-posts ul li p small {
+#blog-listing .blog-listing .blog-sidebar .recent-posts ul li p small, #blog-listing .blog-single .blog-sidebar .recent-posts ul li p small, #blog-single .blog-listing .blog-sidebar .recent-posts ul li p small, #blog-single .blog-single .blog-sidebar .recent-posts ul li p small {
   color: #7f8c8c;
 }
-#blog-listing .blog-listing .blog-sidebar .recent-posts hr {
+#blog-listing .blog-listing .blog-sidebar .recent-posts hr, #blog-listing .blog-single .blog-sidebar .recent-posts hr, #blog-single .blog-listing .blog-sidebar .recent-posts hr, #blog-single .blog-single .blog-sidebar .recent-posts hr {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   margin-top: 0;
   margin-bottom: 0;
 }
-#blog-listing .blog-listing .blog-sidebar .tags {
+#blog-listing .blog-listing .blog-sidebar .tags, #blog-listing .blog-single .blog-sidebar .tags, #blog-single .blog-listing .blog-sidebar .tags, #blog-single .blog-single .blog-sidebar .tags {
   margin-left: 1rem;
 }
-#blog-listing .blog-listing .blog-sidebar .tags a {
+#blog-listing .blog-listing .blog-sidebar .tags a, #blog-listing .blog-single .blog-sidebar .tags a, #blog-single .blog-listing .blog-sidebar .tags a, #blog-single .blog-single .blog-sidebar .tags a {
   background-color: #7f8c8c;
   color: #fff;
   border-bottom: 1px solid #7f8c8c;
@@ -1596,15 +1735,15 @@ footer .social-footer i {
   padding-right: .5rem;
   padding-left: .4rem;
 }
-#blog-listing .blog-listing .blog-sidebar .tags a.active {
+#blog-listing .blog-listing .blog-sidebar .tags a.active, #blog-listing .blog-single .blog-sidebar .tags a.active, #blog-single .blog-listing .blog-sidebar .tags a.active, #blog-single .blog-single .blog-sidebar .tags a.active {
   background-color: #62a29e;
   border-bottom-color: #528b86;
 }
-#blog-listing .blog-listing .blog-sidebar .tags a:hover {
+#blog-listing .blog-listing .blog-sidebar .tags a:hover, #blog-listing .blog-single .blog-sidebar .tags a:hover, #blog-single .blog-listing .blog-sidebar .tags a:hover, #blog-single .blog-single .blog-sidebar .tags a:hover {
   background-color: #e8645a;
   border-bottom: 1px solid #e2534b;
 }
-#blog-listing .blog-listing .blog-sidebar .archive ul li i {
+#blog-listing .blog-listing .blog-sidebar .archive ul li i, #blog-listing .blog-single .blog-sidebar .archive ul li i, #blog-single .blog-listing .blog-sidebar .archive ul li i, #blog-single .blog-single .blog-sidebar .archive ul li i {
   color: #7f8c8c;
 }
 
