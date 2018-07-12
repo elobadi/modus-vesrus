@@ -22,6 +22,12 @@ a:hover i.fa.fa-rss {
   color: #f26522;
 }
 
+hr {
+  border-top: 3px solid rgba(0, 0, 0, 0.1);
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
 /* End Of Constant Styles
 *************************************************/
 .navbar {
@@ -152,11 +158,11 @@ a:hover i.fa.fa-rss {
   z-index: 2;
 }
 
-#showcase .carousel img {
+#showcase .carousel img, #showcase-project .carousel img, #showcase-blog .carousel img, #showcase-sidebar .carousel img {
   max-height: 570px;
   height: auto;
 }
-#showcase .carousel .carousel-item::after {
+#showcase .carousel .carousel-item::after, #showcase-project .carousel .carousel-item::after, #showcase-blog .carousel .carousel-item::after, #showcase-sidebar .carousel .carousel-item::after {
   background: rgba(0, 0, 0, 0.5);
   bottom: 0;
   content: '';
@@ -166,22 +172,22 @@ a:hover i.fa.fa-rss {
   right: 0;
   top: 0;
 }
-#showcase .carousel .carousel-indicators {
+#showcase .carousel .carousel-indicators, #showcase-project .carousel .carousel-indicators, #showcase-blog .carousel .carousel-indicators, #showcase-sidebar .carousel .carousel-indicators {
   bottom: -50px;
 }
-#showcase .carousel .carousel-indicators li {
+#showcase .carousel .carousel-indicators li, #showcase-project .carousel .carousel-indicators li, #showcase-blog .carousel .carousel-indicators li, #showcase-sidebar .carousel .carousel-indicators li {
   background-color: #98a3a3;
   height: 5px;
   margin-right: 10px;
   width: 60px;
 }
-#showcase .carousel .carousel-indicators li.active {
+#showcase .carousel .carousel-indicators li.active, #showcase-project .carousel .carousel-indicators li.active, #showcase-blog .carousel .carousel-indicators li.active, #showcase-sidebar .carousel .carousel-indicators li.active {
   background-color: #e2534b;
 }
-#showcase .carousel .carousel-caption {
+#showcase .carousel .carousel-caption, #showcase-project .carousel .carousel-caption, #showcase-blog .carousel .carousel-caption, #showcase-sidebar .carousel .carousel-caption {
   bottom: 30%;
 }
-#showcase .carousel .carousel-caption h1 {
+#showcase .carousel .carousel-caption h1, #showcase-project .carousel .carousel-caption h1, #showcase-blog .carousel .carousel-caption h1, #showcase-sidebar .carousel .carousel-caption h1 {
   background-color: #e2534b;
   border-radius: 5px;
   font-weight: 900;
@@ -189,7 +195,7 @@ a:hover i.fa.fa-rss {
   margin-right: auto;
   width: 41%;
 }
-#showcase .carousel .carousel-caption p {
+#showcase .carousel .carousel-caption p, #showcase-project .carousel .carousel-caption p, #showcase-blog .carousel .carousel-caption p, #showcase-sidebar .carousel .carousel-caption p {
   background-color: rgba(41, 45, 45, 0.8);
   border-radius: 5px;
   font-size: 1.1rem;
@@ -199,54 +205,66 @@ a:hover i.fa.fa-rss {
   width: 52%;
 }
 @media (min-width: 1024px) and (max-width: 1199.98px) {
-  #showcase .carousel .carousel-caption h1 {
+  #showcase .carousel .carousel-caption h1, #showcase-project .carousel .carousel-caption h1, #showcase-blog .carousel .carousel-caption h1, #showcase-sidebar .carousel .carousel-caption h1 {
     font-size: 2.5rem;
   }
-  #showcase .carousel .carousel-caption p {
+  #showcase .carousel .carousel-caption p, #showcase-project .carousel .carousel-caption p, #showcase-blog .carousel .carousel-caption p, #showcase-sidebar .carousel .carousel-caption p {
     font-size: 1rem;
   }
 }
 @media (max-width: 1023.98px) {
-  #showcase .carousel .carousel-caption h1 {
+  #showcase .carousel .carousel-caption h1, #showcase-project .carousel .carousel-caption h1, #showcase-blog .carousel .carousel-caption h1, #showcase-sidebar .carousel .carousel-caption h1 {
     font-size: 2rem;
   }
-  #showcase .carousel .carousel-caption p {
+  #showcase .carousel .carousel-caption p, #showcase-project .carousel .carousel-caption p, #showcase-blog .carousel .carousel-caption p, #showcase-sidebar .carousel .carousel-caption p {
     font-size: .7rem;
   }
 }
 #showcase .carousel .carousel-control-next,
-#showcase .carousel .carousel-control-prev {
+#showcase .carousel .carousel-control-prev, #showcase-project .carousel .carousel-control-next,
+#showcase-project .carousel .carousel-control-prev, #showcase-blog .carousel .carousel-control-next,
+#showcase-blog .carousel .carousel-control-prev, #showcase-sidebar .carousel .carousel-control-next,
+#showcase-sidebar .carousel .carousel-control-prev {
   opacity: 1;
   width: 48.86px;
 }
 #showcase .carousel .carousel-control-next span,
-#showcase .carousel .carousel-control-prev span {
+#showcase .carousel .carousel-control-prev span, #showcase-project .carousel .carousel-control-next span,
+#showcase-project .carousel .carousel-control-prev span, #showcase-blog .carousel .carousel-control-next span,
+#showcase-blog .carousel .carousel-control-prev span, #showcase-sidebar .carousel .carousel-control-next span,
+#showcase-sidebar .carousel .carousel-control-prev span {
   background-color: #e8645a;
   border-bottom: 3px solid #e2534b;
   font-size: 40px;
 }
-#showcase .carousel .carousel-control-prev span {
+#showcase .carousel .carousel-control-prev span, #showcase-project .carousel .carousel-control-prev span, #showcase-blog .carousel .carousel-control-prev span, #showcase-sidebar .carousel .carousel-control-prev span {
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
   padding: 10px 15px 10px 11px;
 }
-#showcase .carousel .carousel-control-next span {
+#showcase .carousel .carousel-control-next span, #showcase-project .carousel .carousel-control-next span, #showcase-blog .carousel .carousel-control-next span, #showcase-sidebar .carousel .carousel-control-next span {
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
   padding: 10px 11px 10px 15px;
 }
 @media (max-width: 425px) {
-  #showcase .carousel .carousel-indicators li {
+  #showcase .carousel .carousel-indicators li, #showcase-project .carousel .carousel-indicators li, #showcase-blog .carousel .carousel-indicators li, #showcase-sidebar .carousel .carousel-indicators li {
     height: 5px;
     width: 40px;
   }
   #showcase .carousel .carousel-control-next,
-  #showcase .carousel .carousel-control-prev {
+  #showcase .carousel .carousel-control-prev, #showcase-project .carousel .carousel-control-next,
+  #showcase-project .carousel .carousel-control-prev, #showcase-blog .carousel .carousel-control-next,
+  #showcase-blog .carousel .carousel-control-prev, #showcase-sidebar .carousel .carousel-control-next,
+  #showcase-sidebar .carousel .carousel-control-prev {
     opacity: 1;
     width: 36.86px;
   }
   #showcase .carousel .carousel-control-next span,
-  #showcase .carousel .carousel-control-prev span {
+  #showcase .carousel .carousel-control-prev span, #showcase-project .carousel .carousel-control-next span,
+  #showcase-project .carousel .carousel-control-prev span, #showcase-blog .carousel .carousel-control-next span,
+  #showcase-blog .carousel .carousel-control-prev span, #showcase-sidebar .carousel .carousel-control-next span,
+  #showcase-sidebar .carousel .carousel-control-prev span {
     background-color: #e8645a;
     border-bottom: 3px solid #e2534b;
     font-size: 20px;
@@ -629,6 +647,11 @@ a:hover i.fa.fa-rss {
   margin-bottom: 0;
   color: #7f8c8c;
   font-weight: 900;
+}
+#clients #clients-slider hr, #related-projects #clients-slider hr {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-left: 0;
+  margin-right: 0;
 }
 #clients #clients-slider .carousel-indicators, #related-projects #clients-slider .carousel-indicators {
   margin-right: auto;
@@ -1748,6 +1771,286 @@ footer .social-footer i {
 }
 
 /* End of blog-listing.html page
+======================================================= */
+/* features.html page
+*/
+.features #showcase, .features #showcase-project, .features #showcase-blog, .features #showcase-sidebar {
+  width: 100%;
+}
+.features #showcase .carousel, .features #showcase-project .carousel, .features #showcase-blog .carousel, .features #showcase-sidebar .carousel {
+  border-radius: 5px;
+  border-bottom: 3px solid #e5e6e6;
+}
+.features #showcase .carousel img, .features #showcase-project .carousel img, .features #showcase-blog .carousel img, .features #showcase-sidebar .carousel img {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+}
+.features #showcase .carousel .carousel-item::after, .features #showcase-project .carousel .carousel-item::after, .features #showcase-blog .carousel .carousel-item::after, .features #showcase-sidebar .carousel .carousel-item::after {
+  display: none;
+}
+.features #showcase-blog .carousel img {
+  height: 565px;
+}
+.features #showcase-sidebar .carousel img {
+  height: 200px;
+}
+.features #showcase-sidebar .carousel-control-next,
+.features #showcase-sidebar .carousel-control-prev {
+  width: 38.86px;
+}
+.features #showcase-sidebar .carousel-control-next span,
+.features #showcase-sidebar .carousel-control-prev span {
+  background-color: #e8645a;
+  border-bottom: 3px solid #e2534b;
+  padding: 4px 15px 4px 13px;
+  font-size: 28px;
+  font-weight: 800;
+}
+.features #showcase-sidebar .carousel-indicators {
+  bottom: -40px;
+}
+.features #showcase-sidebar .carousel-indicators li {
+  width: 35px;
+}
+.features .sidebar-gallery {
+  margin-top: 4rem;
+}
+.features .sidebar-gallery h6 {
+  color: #7f8c8c;
+  font-size: 1rem;
+  font-weight: 800;
+}
+.features .sidebar-gallery .card-deck .card .card-body {
+  height: 65px;
+  width: 70px;
+  border-bottom: 3px solid #e5e6e6;
+  border-radius: 5px;
+  padding: 0;
+}
+.features .sidebar-gallery .card-deck .card .card-body img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
+
+.modus-accordion {
+  margin-top: 6rem;
+}
+.modus-accordion .accordion .card, .modus-accordion .accordion .card:not(:first-of-type) {
+  margin-bottom: .5rem;
+  border-radius: 8px;
+  border-bottom: 3px solid #e5e6e6;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  color: #7f8c8c;
+}
+.modus-accordion .accordion .card .card-header, .modus-accordion .accordion .card .card-header:first-child, .modus-accordion .accordion .card:not(:first-of-type) .card-header, .modus-accordion .accordion .card:not(:first-of-type) .card-header:first-child {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: .5rem 1.25rem;
+  border: 0;
+}
+.modus-accordion .accordion .card .card-header h5 button.btn-link, .modus-accordion .accordion .card .card-header:first-child h5 button.btn-link, .modus-accordion .accordion .card:not(:first-of-type) .card-header h5 button.btn-link, .modus-accordion .accordion .card:not(:first-of-type) .card-header:first-child h5 button.btn-link {
+  text-decoration: none;
+  font-weight: 800;
+  color: #7f8c8c;
+  padding-left: 0;
+}
+.modus-accordion .accordion .card .card-header h5 button.btn-link:hover, .modus-accordion .accordion .card .card-header:first-child h5 button.btn-link:hover, .modus-accordion .accordion .card:not(:first-of-type) .card-header h5 button.btn-link:hover, .modus-accordion .accordion .card:not(:first-of-type) .card-header:first-child h5 button.btn-link:hover {
+  color: unset;
+}
+.modus-accordion .accordion .card .card-header h5:after, .modus-accordion .accordion .card .card-header:first-child h5:after, .modus-accordion .accordion .card:not(:first-of-type) .card-header h5:after, .modus-accordion .accordion .card:not(:first-of-type) .card-header:first-child h5:after {
+  font-family: 'FontAwesome';
+  content: "\f056";
+  float: right;
+  margin-top: .5rem;
+}
+.modus-accordion .accordion .card .card-header.collapsed, .modus-accordion .accordion .card .card-header:first-child.collapsed, .modus-accordion .accordion .card:not(:first-of-type) .card-header.collapsed, .modus-accordion .accordion .card:not(:first-of-type) .card-header:first-child.collapsed {
+  background-color: #f8f8f8;
+}
+.modus-accordion .accordion .card .card-header.collapsed h5:after, .modus-accordion .accordion .card .card-header:first-child.collapsed h5:after, .modus-accordion .accordion .card:not(:first-of-type) .card-header.collapsed h5:after, .modus-accordion .accordion .card:not(:first-of-type) .card-header:first-child.collapsed h5:after {
+  /* symbol for "collapsed" panels */
+  content: "\f055";
+}
+.modus-accordion .accordion .card .card-body, .modus-accordion .accordion .card:not(:first-of-type) .card-body {
+  padding-top: 0;
+  font-size: .8rem;
+}
+
+.modus-tabNavs .modus-tab nav {
+  padding: 0;
+}
+.modus-tabNavs .modus-tab nav .nav-tabs {
+  border: 0;
+}
+.modus-tabNavs .modus-tab nav .nav-tabs a {
+  border: 0;
+  background-color: #62bdbd;
+  color: #fff;
+  margin-right: .6rem;
+  padding: .8rem 1.6rem;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  font-weight: 800;
+}
+.modus-tabNavs .modus-tab nav .nav-tabs a:last-of-type {
+  margin-right: 0;
+}
+.modus-tabNavs .modus-tab nav .nav-tabs a.active {
+  background-color: #f8f8f8;
+  color: #7f8c8c;
+}
+.modus-tabNavs .modus-tab nav .nav-tabs a.active:hover {
+  background-color: #f8f8f8;
+}
+.modus-tabNavs .modus-tab nav .nav-tabs a:hover {
+  background-color: #e2534b;
+}
+.modus-tabNavs .modus-tab .tab-content {
+  padding: 1.7rem;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #f8f8f8;
+  border-bottom: 3px solid #e5e6e6;
+}
+.modus-tabNavs .modus-tab .tab-content p {
+  font-size: .8rem;
+  color: #7f8c8c;
+}
+.modus-tabNavs .modus-tab .tab-content img {
+  width: 160px;
+  height: 110px;
+  background-color: #fff;
+  margin-left: .5rem;
+}
+.modus-tabNavs .sidebar-tab .modus-tab nav .nav-tabs a {
+  margin-right: .2rem;
+  padding: .8rem 1.2rem;
+  font-size: .9rem;
+}
+@media (min-width: 425px) and (max-width: 767.98px) {
+  .modus-tabNavs .modus-tab nav .nav-tabs a {
+    margin-right: .3rem;
+    padding: .5rem .5rem;
+    font-size: .9rem;
+  }
+  .modus-tabNavs .modus-tab .tab-content {
+    padding: .7rem;
+  }
+}
+@media (max-width: 424.98px) {
+  .modus-tabNavs .modus-tab nav .nav-tabs a {
+    margin-right: .1rem;
+    padding: .5rem .5rem;
+    font-size: .7rem;
+  }
+  .modus-tabNavs .modus-tab .tab-content {
+    padding: .7rem;
+  }
+  .modus-tabNavs .modus-tab .tab-content p {
+    font-size: .7rem;
+  }
+}
+
+.grid-formats h5 {
+  color: #7f8c8c;
+  font-size: 1rem;
+  font-weight: 800;
+}
+.grid-formats p {
+  color: #7f8c8c;
+  font-size: .9rem;
+}
+
+.arrow-list h6 {
+  color: #7f8c8c;
+  font-weight: 900;
+}
+.arrow-list li {
+  color: #7f8c8c;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+.arrow-list li i {
+  font-size: 12px;
+}
+.arrow-list.red li i {
+  color: #e2534b;
+}
+.arrow-list.blue li i {
+  color: #62bdbd;
+}
+.arrow-list.px-13 li {
+  font-size: 13px;
+}
+.arrow-list.px-14 {
+  font-size: 14px;
+}
+
+.modus-tables .table {
+  border-color: #e5e6e6;
+  border-spacing: 0;
+  border-collapse: separate;
+  border-bottom: 4px solid #e5e6e6;
+  border-radius: 5px;
+  color: #7f8c8c;
+}
+.modus-tables .table thead tr th {
+  border-top: 0;
+  border-bottom: 0;
+  background-color: #ececec;
+  border-right: 1px solid #e5e6e6;
+  font-weight: 800;
+}
+.modus-tables .table thead tr th:first-child {
+  border-top-left-radius: 5px;
+}
+.modus-tables .table thead tr th:last-child {
+  border-right: 0;
+  border-top-right-radius: 5px;
+}
+.modus-tables .table tbody {
+  font-size: .9rem;
+}
+.modus-tables .table tbody td, .modus-tables .table tbody th {
+  padding: .6rem;
+}
+.modus-tables .table tbody tr:first-child th, .modus-tables .table tbody tr:first-child td {
+  border-top: 3px solid #e5e6e6;
+}
+.modus-tables .table tbody tr {
+  background-color: #f8f8f8;
+}
+.modus-tables .table tbody tr th {
+  border-right: 1px solid #dee2e6;
+  font-weight: 400;
+}
+.modus-tables .table tbody tr td {
+  border-right: 1px solid #dee2e6;
+}
+.modus-tables .table tbody tr td:last-child {
+  border-right: 0;
+}
+.modus-tables .table.blue-table thead tr th {
+  background-color: #62bdbd;
+  border-right-color: #4e948d;
+  color: #fff;
+}
+.modus-tables .table.red-table thead tr th {
+  background-color: #e2534b;
+  border-right-color: #b5423c;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .modus-tables .table thead {
+    font-size: .84rem;
+  }
+}
+
+/* End of features.html page
 ======================================================= */
 .contents {
   display: inline-block;

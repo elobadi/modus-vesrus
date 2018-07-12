@@ -30,6 +30,12 @@ a {
   }
 }
 
+hr {
+  border-top: 3px solid rgba(0, 0, 0, 0.1);
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
 /* End Of Constant Styles
 *************************************************/
 
@@ -188,7 +194,7 @@ a {
 // Showcase //
 
 // Showcase //
-#showcase {
+#showcase, #showcase-project, #showcase-blog, #showcase-sidebar {
   .carousel {
     img {
       max-height: 570px;
@@ -862,6 +868,12 @@ a {
       margin-bottom: 0;
       color: $blue-secondary-text;
       font-weight: 900;
+    }
+
+    hr {
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      margin-left: 0;
+      margin-right: 0;
     }
 
     .carousel-indicators {
@@ -2093,8 +2105,8 @@ footer {
         .share-social {
           p {
             font-weight: 600;
-
           }
+
           a {
             color: unset;
             background-color: unset;
@@ -2307,9 +2319,6 @@ footer {
 
         // Extra small devices (portrait phones, less than 576px)
         @media (max-width: 575.98px) {}
-
-
-
       }
     }
 
@@ -2415,4 +2424,425 @@ footer {
 }
 
 /* End of blog-listing.html page
+======================================================= */
+
+/* features.html page
+*/
+
+.features {
+  #showcase, #showcase-project, #showcase-blog, #showcase-sidebar {
+    width: 100%;
+
+    .carousel {
+      border-radius: 5px;
+      border-bottom: 3px solid #e5e6e6;
+
+      img {
+        background-color: #f8f8f8;
+        border-radius: 5px;
+      }
+
+      .carousel-item::after {
+        display: none;
+      }
+    }
+  }
+
+  #showcase-blog {
+    .carousel {
+      img {
+        height: 565px;
+      }
+    }
+  }
+
+  #showcase-sidebar {
+    .carousel {
+      img {
+        height: 200px;
+      }
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+      width: 38.86px;
+
+      span {
+        background-color: $red-primary;
+        border-bottom: 3px solid $red-secondary;
+        padding: 4px 15px 4px 13px;
+        font-size: 28px;
+        font-weight: 800;
+      }
+    }
+
+    .carousel-indicators {
+      bottom: -40px;
+
+      li {
+        width: 35px;
+      }
+    }
+  }
+
+  .sidebar-gallery {
+    margin-top: 4rem;
+
+    h6 {
+      color: $blue-secondary-text;
+      font-size: 1rem;
+      font-weight: 800;
+    }
+
+    .card-deck {
+      .card {
+        .card-body {
+          height: 65px;
+          width: 70px;
+          border-bottom: 3px solid #e5e6e6;
+          border-radius: 5px;
+          padding: 0;
+
+          img {
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+          }
+        }
+      }
+    }
+  }
+}
+
+.modus-accordion {
+  margin-top: 6rem;
+
+  .accordion {
+    .card, .card:not(:first-of-type) {
+      margin-bottom: .5rem;
+      border-radius: 8px;
+      border-bottom: 3px solid #e5e6e6;
+      border-top: 0;
+      border-right: 0;
+      border-left: 0;
+      color: #7f8c8c;
+
+      .card-header, .card-header:first-child {
+        background-color: #fff;
+        border-radius: 6px;
+        padding: .5rem 1.25rem;
+        border: 0;
+
+        h5 {
+          button {
+            &.btn-link {
+              text-decoration: none;
+              font-weight: 800;
+              color: #7f8c8c;
+              padding-left: 0;
+
+              &:hover {
+                color: unset;
+              }
+            }
+          }
+
+          &:after {
+            font-family: 'FontAwesome';
+            content: "\f056";
+            float: right;
+            margin-top: .5rem;
+          }
+        }
+
+        &.collapsed {
+          background-color: #f8f8f8;
+
+          h5 {
+            &:after {
+              /* symbol for "collapsed" panels */
+              content: "\f055";
+            }
+          }
+        }
+      }
+
+      .card-body {
+        padding-top: 0;
+        font-size: .8rem;
+      }
+    }
+  }
+}
+
+.modus-tabNavs {
+  .modus-tab {
+    nav {
+      padding: 0;
+
+      .nav-tabs {
+        border: 0;
+
+        a {
+          border: 0;
+          background-color: $blue-secondary;
+          color: #fff;
+          margin-right: .6rem;
+          padding: .8rem 1.6rem;
+          border-top-right-radius: 5px;
+          border-top-left-radius: 5px;
+          font-weight: 800;
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+
+          &.active {
+            background-color: #f8f8f8;
+            color: #7f8c8c;
+
+            &:hover {
+              background-color: #f8f8f8;
+            }
+          }
+
+          &:hover {
+            background-color: $red-secondary;
+          }
+        }
+      }
+    }
+
+    .tab-content {
+      padding: 1.7rem;
+      border-top-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background-color: #f8f8f8;
+      border-bottom: 3px solid #e5e6e6;
+
+      p {
+        font-size: .8rem;
+        color: #7f8c8c;
+      }
+
+      img {
+        width: 160px;
+        height: 110px;
+        background-color: #fff;
+        margin-left: .5rem;
+      }
+    }
+  }
+
+  .sidebar-tab {
+    .modus-tab {
+      nav {
+        .nav-tabs {
+          a {
+            margin-right: .2rem;
+            padding: .8rem 1.2rem;
+            font-size: .9rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 425px) and (max-width: 767.98px) {
+    .modus-tab {
+      nav {
+        .nav-tabs {
+          a {
+            margin-right: .3rem;
+            padding: .5rem .5rem;
+            font-size: .9rem;
+          }
+        }
+      }
+
+      .tab-content {
+        padding: .7rem;
+      }
+    }
+  }
+
+  @media (max-width: 424.98px) {
+    .modus-tab {
+      nav {
+        .nav-tabs {
+          a {
+            margin-right: .1rem;
+            padding: .5rem .5rem;
+            font-size: .7rem;
+          }
+        }
+      }
+
+      .tab-content {
+        padding: .7rem;
+
+        p {
+          font-size: .7rem;
+        }
+      }
+    }
+  }
+}
+
+.grid-formats {
+  h5 {
+    color: $blue-secondary-text;
+    font-size: 1rem;
+    font-weight: 800;
+  }
+
+  p {
+    color: $blue-secondary-text;
+    font-size: .9rem;
+  }
+}
+
+.arrow-list {
+  h6 {
+    color: $blue-secondary-text;
+    font-weight: 900;
+  }
+
+  li {
+    color: $blue-secondary-text;
+    font-weight: 600;
+    padding-bottom: 5px;
+
+    i {
+      font-size: 12px;
+    }
+  }
+
+  &.red {
+    li {
+      i {
+        color: $red-secondary;
+      }
+    }
+  }
+
+  &.blue {
+    li {
+      i {
+        color: $blue-secondary;
+      }
+    }
+  }
+
+  &.px-13 {
+    li {
+      font-size: 13px;
+    }
+  }
+
+  &.px-14 {
+    font-size: 14px;
+  }
+}
+
+.modus-tables {
+  .table {
+    border-color: #e5e6e6;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-bottom: 4px solid #e5e6e6;
+    border-radius: 5px;
+    color: $blue-secondary-text;
+
+    thead {
+      tr {
+        th {
+          border-top: 0;
+          border-bottom: 0;
+          background-color: #ececec;
+          border-right: 1px solid #e5e6e6;
+          font-weight: 800;
+
+          &:first-child {
+            border-top-left-radius: 5px;
+          }
+
+          &:last-child {
+            border-right: 0;
+            border-top-right-radius: 5px;
+          }
+        }
+      }
+    }
+
+    tbody {
+      font-size: .9rem;
+
+      td, th {
+        padding: .6rem;
+      }
+
+      tr {
+        &:first-child {
+          th, td {
+            border-top: 3px solid #e5e6e6;
+          }
+        }
+      }
+
+      tr {
+        background-color: #f8f8f8;
+
+        th {
+          border-right: 1px solid #dee2e6;
+          font-weight: 400;
+        }
+
+        td {
+          border-right: 1px solid #dee2e6;
+
+          &:last-child {
+            border-right: 0;
+          }
+        }
+      }
+    }
+
+    &.blue-table {
+      thead {
+        tr {
+          th {
+            background-color: $blue-secondary;
+            border-right-color: #4e948d;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    &.red-table {
+      thead {
+        tr {
+          th {
+            background-color: $red-secondary;
+            border-right-color: #b5423c;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .table {
+      thead {
+        font-size: .84rem;
+      }
+    }
+  }
+}
+
+/* End of features.html page
 ======================================================= */
