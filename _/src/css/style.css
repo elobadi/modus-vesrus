@@ -22,10 +22,39 @@ a:hover i.fa.fa-rss {
   color: #f26522;
 }
 
+h6 {
+  font-weight: 600;
+  color: #7f8c8c;
+}
+
 hr {
   border-top: 3px solid rgba(0, 0, 0, 0.1);
   margin-left: -15px;
   margin-right: -15px;
+}
+
+form input, form textarea, form .form-control {
+  border-top: 2px solid #d9dada;
+  border-left: 3px solid #d9dada;
+  background-color: #e5e6e6;
+  border-radius: 7px;
+  border-right: 3px solid #e5e6e6;
+  border-bottom: 3px solid #e5e6e6;
+}
+form input:focus, form textarea:focus, form .form-control:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+form label {
+  color: #7f8c8c;
+  font-size: 1.1rem;
+}
+form button, form .btn {
+  background-color: #e8645a;
+  border-bottom: 4px solid #e2534b;
+  color: #fff;
+  padding: .6rem 4.5rem;
+  font-weight: 600;
 }
 
 /* End Of Constant Styles
@@ -1656,29 +1685,6 @@ footer .social-footer i {
   font-weight: 600;
   color: #7f8c8c;
 }
-#blog-listing .blog-listing .blog-main .post-comment .comment-form form input, #blog-listing .blog-listing .blog-main .post-comment .comment-form form textarea, #blog-listing .blog-single .blog-main .post-comment .comment-form form input, #blog-listing .blog-single .blog-main .post-comment .comment-form form textarea, #blog-single .blog-listing .blog-main .post-comment .comment-form form input, #blog-single .blog-listing .blog-main .post-comment .comment-form form textarea, #blog-single .blog-single .blog-main .post-comment .comment-form form input, #blog-single .blog-single .blog-main .post-comment .comment-form form textarea {
-  border-top: 2px solid #d9dada;
-  border-left: 3px solid #d9dada;
-  background-color: #e5e6e6;
-  border-radius: 7px;
-  border-right: 3px solid #e5e6e6;
-  border-bottom: 3px solid #e5e6e6;
-}
-#blog-listing .blog-listing .blog-main .post-comment .comment-form form input:focus, #blog-listing .blog-listing .blog-main .post-comment .comment-form form textarea:focus, #blog-listing .blog-single .blog-main .post-comment .comment-form form input:focus, #blog-listing .blog-single .blog-main .post-comment .comment-form form textarea:focus, #blog-single .blog-listing .blog-main .post-comment .comment-form form input:focus, #blog-single .blog-listing .blog-main .post-comment .comment-form form textarea:focus, #blog-single .blog-single .blog-main .post-comment .comment-form form input:focus, #blog-single .blog-single .blog-main .post-comment .comment-form form textarea:focus {
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-}
-#blog-listing .blog-listing .blog-main .post-comment .comment-form form label, #blog-listing .blog-single .blog-main .post-comment .comment-form form label, #blog-single .blog-listing .blog-main .post-comment .comment-form form label, #blog-single .blog-single .blog-main .post-comment .comment-form form label {
-  color: #7f8c8c;
-  font-size: 1.1rem;
-}
-#blog-listing .blog-listing .blog-main .post-comment .comment-form form button, #blog-listing .blog-single .blog-main .post-comment .comment-form form button, #blog-single .blog-listing .blog-main .post-comment .comment-form form button, #blog-single .blog-single .blog-main .post-comment .comment-form form button {
-  background-color: #e8645a;
-  border-bottom: 4px solid #e2534b;
-  color: #fff;
-  padding: .6rem 4.5rem;
-  font-weight: 600;
-}
 @media (max-width: 1199.98px) {
   #blog-listing .blog-listing .blog-main .post-comment .user-comment dl dd .comment-details, #blog-listing .blog-single .blog-main .post-comment .user-comment dl dd .comment-details, #blog-single .blog-listing .blog-main .post-comment .user-comment dl dd .comment-details, #blog-single .blog-single .blog-main .post-comment .user-comment dl dd .comment-details {
     margin-left: 1rem;
@@ -2051,6 +2057,37 @@ footer .social-footer i {
 }
 
 /* End of features.html page
+======================================================= */
+/* contacts.html page
+*/
+#contacts .contact-us .google-maps #map {
+  border-radius: 5px;
+  border-bottom: 3px solid #e5e6e6;
+}
+#contacts .contact-us h5 {
+  font-weight: 600;
+  color: #7f8c8c;
+}
+#contacts .contact-us .address i.fa-map-marker {
+  color: #e2534b;
+  font-size: 2.3rem;
+}
+#contacts .contact-us .address i.fa-phone, #contacts .contact-us .address i.fa-envelope {
+  font-size: 1.3rem;
+  color: #7f8c8c;
+}
+#contacts .contact-us .address p {
+  color: #7f8c8c;
+}
+#contacts .contact-us .address .row:first-of-type p {
+  font-size: .9rem;
+}
+#contacts .contact-us .address a {
+  text-decoration: underline;
+  color: #e2534b;
+}
+
+/* End of contacts.html page
 ======================================================= */
 .contents {
   display: inline-block;

@@ -11,3 +11,13 @@ $('.dropdown').on('show.bs.dropdown', function (e) {
 $('.dropdown').on('hide.bs.dropdown', function (e) {
   $(this).find('.dropdown-menu').first().stop(true, true).slideUp(200);
 });
+
+// Google Maps script
+
+var map;
+     function initMap() {
+       map = new google.maps.Map(document.getElementById('map'), {
+         center: {lat: -34.397, lng: 150.644},
+         zoom: 8
+       });
+     }

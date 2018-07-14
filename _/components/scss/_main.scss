@@ -30,10 +30,44 @@ a {
   }
 }
 
+h6 {
+  // font-size: 1.5rem;
+  font-weight: 600;
+  color: $blue-secondary-text;
+}
+
 hr {
   border-top: 3px solid rgba(0, 0, 0, 0.1);
   margin-left: -15px;
   margin-right: -15px;
+}
+
+form {
+  input, textarea, .form-control {
+    border-top: 2px solid #d9dada;
+    border-left: 3px solid #d9dada;
+    background-color: #e5e6e6;
+    border-radius: 7px;
+    border-right: 3px solid #e5e6e6;
+    border-bottom: 3px solid #e5e6e6;
+
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+
+  label {
+    color: #7f8c8c;
+    font-size: 1.1rem;
+  }
+
+  button, .btn {
+    background-color: #e8645a;
+    border-bottom: 4px solid #e2534b;
+    color: #fff;
+    padding: .6rem 4.5rem;
+    font-weight: 600;
+  }
 }
 
 /* End Of Constant Styles
@@ -2231,33 +2265,34 @@ footer {
             color: $blue-secondary-text;
           }
 
-          form {
-            input, textarea {
-              border-top: 2px solid #d9dada;
-              border-left: 3px solid #d9dada;
-              background-color: #e5e6e6;
-              border-radius: 7px;
-              border-right: 3px solid #e5e6e6;
-              border-bottom: 3px solid #e5e6e6;
+          // form {
+          //   input, textarea {
+          //     border-top: 2px solid #d9dada;
+          //     border-left: 3px solid #d9dada;
+          //     background-color: #e5e6e6;
+          //     border-radius: 7px;
+          //     border-right: 3px solid #e5e6e6;
+          //     border-bottom: 3px solid #e5e6e6;
+          //
+          //     &:focus {
+          //       box-shadow: none !important;
+          //     }
+          //   }
+          //
+          //   label {
+          //     color: #7f8c8c;
+          //     font-size: 1.1rem;
+          //   }
+          //
+          //   button {
+          //     background-color: #e8645a;
+          //     border-bottom: 4px solid #e2534b;
+          //     color: #fff;
+          //     padding: .6rem 4.5rem;
+          //     font-weight: 600;
+          //   }
+          // }
 
-              &:focus {
-                box-shadow: none !important;
-              }
-            }
-
-            label {
-              color: #7f8c8c;
-              font-size: 1.1rem;
-            }
-
-            button {
-              background-color: #e8645a;
-              border-bottom: 4px solid #e2534b;
-              color: #fff;
-              padding: .6rem 4.5rem;
-              font-weight: 600;
-            }
-          }
         }
 
         // Large devices (desktops, less than 1200px)
@@ -2845,4 +2880,57 @@ footer {
 }
 
 /* End of features.html page
+======================================================= */
+
+/* contacts.html page
+*/
+
+#contacts {
+  .contact-us {
+    .google-maps {
+      #map {
+        border-radius: 5px;
+        border-bottom: 3px solid #e5e6e6;
+      }
+    }
+
+    h5 {
+      font-weight: 600;
+      color: $blue-secondary-text;
+    }
+
+    .address {
+      i {
+        &.fa-map-marker {
+          color: $red-secondary;
+          font-size: 2.3rem;
+        }
+
+        &.fa-phone, &.fa-envelope {
+          font-size: 1.3rem;
+          color: $blue-secondary-text;
+        }
+      }
+
+      p {
+        color: $blue-secondary-text;
+      }
+
+      .row {
+        &:first-of-type {
+          p {
+            font-size: .9rem;
+          }
+        }
+      }
+
+      a {
+        text-decoration: underline;
+        color: $red-secondary;
+      }
+    }
+  }
+}
+
+/* End of contacts.html page
 ======================================================= */
