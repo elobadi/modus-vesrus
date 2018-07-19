@@ -1,7 +1,7 @@
 /* Toggle the search-bar on click */
-$('.form-group .fa-search').on('click', function () {
-  $(this).parent().toggleClass('active');
-});
+// $('.form-group .fa-search').on('click', function () {
+//   $(this).parent().toggleClass('active');
+// });
 
 /* dropdown effect fade in */
 $('.dropdown').on('show.bs.dropdown', function (e) {

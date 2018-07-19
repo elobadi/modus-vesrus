@@ -164,61 +164,120 @@ form {
     margin-right: 5px;
   }
 
-  .form-group {
-    background-color: $blue-secondary;
-    border-radius: 25px;
-    display: inline-block;
-    height: 32px;
-    margin-left: 30px;
-    position: relative;
-    transition: all .5s, border-radius 0s;
-    width: 32px;
+  .search {
+    width: 0;
+    height: 0;
 
-    .form-control {
-      background: transparent;
-      border: 0 none;
-      box-shadow: none;
-      color: #fff;
-      display: block;
-      padding-right: 20px;
-    }
+    .form-group {
+      border-radius: 5px;
+      display: inline-block;
+      height: 32px;
+      margin-left: 10px;
+      position: relative;
+      transition: all .5s, border-radius 0s;
+      width: 32px;
 
-    .form-control::-webkit-input-placeholder {
-      display: none;
-    }
+      &.show {
+        background-color: $red-primary;
+        border-bottom: 3px solid $red-secondary;
+      }
 
-    .form-control::-moz-placeholder {
-      // Firefox 18- //
-      display: none;
-    }
+      .dropdown-menu {
+        background-color: $red-secondary;
+        margin-top: 1rem;
+        padding: 4px;
+        position: relative;
+        left: -12rem;
+        min-width: 14rem;
 
-    .form-control:-ms-input-placeholder {
-      display: none;
-    }
+        &::before {
+          border-bottom: 8px solid $red-secondary;
+          border-left: 7px solid transparent;
+          border-right: 7px solid transparent;
+          content: '';
+          display: inline-block;
+          right: 10px;
+          left: unset;
+          position: absolute;
+          top: -8px;
+        }
 
-    &.active {
-      border-radius: 4px 25px 25px 4px;
-      margin-left: 0;
-      transform: translate3d(30px, 0, 0);
-      width: 19%;
-    }
+        .dropdown-item {
+          background-color: $red-primary;
+          border-radius: 5px;
+          color: white;
+          font-size: .85rem;
+          font-weight: 600;
+          margin: 5px 0;
+          padding-left: .5rem;
+          padding-right: 1rem;
+          transition: all .2s, border-radius 0s;
 
-    @media (max-width: 1199.98px) {
+          &:hover, &.active {
+            background-color: $blue-primary;
+          }
+        }
+      }
+
+      .form-control {
+        background: #fff;
+        border: 0 none;
+        box-shadow: none;
+        display: block;
+        border-radius: 3px;
+        padding: .2rem .75rem;
+      }
+
+      .form-control::-webkit-input-placeholder {
+        display: none;
+      }
+
+      .form-control::-moz-placeholder {
+        // Firefox 18- //
+        display: none;
+      }
+
+      .form-control:-ms-input-placeholder {
+        display: none;
+      }
+
       &.active {
-        width: 15%;
+        border-radius: 4px 25px 25px 4px;
+        margin-left: 0;
+        transform: translate3d(30px, 0, 0);
+        width: 19%;
+      }
+
+      @media (max-width: 1199.98px) {
+        &.active {
+          width: 15%;
+        }
+      }
+
+      .form-control-feedback {
+        color: #fff;
+        cursor: pointer;
+        display: block;
+        left: initial;
+        position: absolute;
+        right: 3px;
+        text-align: center;
+        top: 7px;
+        z-index: 2;
       }
     }
 
-    .form-control-feedback {
-      color: #fff;
-      cursor: pointer;
-      display: block;
-      left: initial;
-      position: absolute;
-      right: 3px;
-      text-align: center;
-      top: 7px;
-      z-index: 2;
+    @media (max-width: 991.98px) {
+      .form-group {
+        .dropdown-menu {
+          left: 0;
+
+          &::before {
+            right: unset;
+            left: 10px;
+          }
+        }
+      }
     }
   }
 }
